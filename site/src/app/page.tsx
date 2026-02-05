@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RootChart from "../components/RootChart";
 
 const features = [
   {
@@ -87,29 +88,8 @@ export default function Home() {
             <span>支持 Windows / macOS / Linux / Android</span>
           </div>
         </div>
-        <div className="rounded-3xl border border-white/60 bg-white/80 p-8 shadow-[var(--shadow-lg)]">
-          <div className="flex items-center justify-between">
-            <div>
-              <div className="text-sm font-semibold text-slate-800">键位速览</div>
-              <div className="text-xs text-slate-500">双拼 + 字根一体化</div>
-            </div>
-            <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
-              实时示意
-            </span>
-          </div>
-          <div className="mt-6 grid grid-cols-5 gap-2 text-center text-xs text-slate-600">
-            {Array.from({ length: 25 }).map((_, index) => (
-              <div
-                key={index}
-                className="flex h-12 items-center justify-center rounded-xl border border-emerald-100 bg-emerald-50/60 font-mono text-[11px]"
-              >
-                {String.fromCharCode(65 + (index % 26))}
-              </div>
-            ))}
-          </div>
-          <div className="mt-6 rounded-2xl bg-emerald-50/80 px-4 py-3 text-xs text-emerald-700">
-            提示：真实键位图与拆分规则将在教程页展示
-          </div>
+        <div className="flex justify-center lg:justify-end">
+          <RootChart />
         </div>
       </section>
 
