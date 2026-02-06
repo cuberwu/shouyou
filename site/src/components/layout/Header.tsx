@@ -1,13 +1,20 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "教程", href: "/tutorial" },
   { label: "查形", href: "/lookup" },
-  { label: "下载", href: "/download" },
   { label: "关于", href: "/about" },
 ];
 
 export default function Header() {
+  const pathname = usePathname();
+  const displayLinks =
+    pathname === "/"
+      ? navLinks
+      : [{ label: "回到首页", href: "/" }, ...navLinks];
   return (
     <header className="sticky top-0 z-50 border-b border-white/30 bg-white/80 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-4">
@@ -31,7 +38,7 @@ export default function Header() {
           className="hidden items-center gap-6 text-sm font-medium text-slate-700 lg:flex"
           aria-label="主导航"
         >
-          {navLinks.map((link) => (
+          {displayLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -61,7 +68,7 @@ export default function Header() {
             菜单
           </summary>
           <div className="mt-3 flex flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-700 shadow-[var(--shadow-md)]">
-            {navLinks.map((link) => (
+            {displayLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}

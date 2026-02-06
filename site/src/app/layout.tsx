@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com"
   ),
   icons: {
-    icon: "favicon.svg",
+    icon: "/favicon.svg",
   },
   openGraph: {
     title: "首右辅助码｜高效中文输入方案",

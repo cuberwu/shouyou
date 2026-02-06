@@ -103,13 +103,12 @@ export default function RootChart() {
   const [active, setActive] = useState<VersionKey>("plus");
 
   return (
-    <div className="w-full max-w-xl rounded-3xl border border-white/60 bg-white/80 p-4 shadow-[var(--shadow-lg)] sm:p-6">
+    <div className="w-full max-w-xl rounded-3xl border border-white/60 bg-white/80 p-5 shadow-[var(--shadow-lg)] sm:p-7">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
           <div className="text-sm font-semibold text-slate-800">
             首右{rootCharts[active].label}字根图
           </div>
-          <div className="text-xs text-slate-500">普及版与 Plus 版一键切换</div>
         </div>
         <div
           className="flex items-center rounded-full border border-slate-200 bg-white/80 p-1 text-[11px] font-semibold"
@@ -162,7 +161,7 @@ export default function RootChart() {
                   : "pointer-events-none opacity-0 translate-y-2"
               }`}
             >
-              <div className="space-y-1 sm:space-y-2">
+              <div className="space-y-1 sm:space-y-2 lg:-ml-4">
                 {chart.rows.map((row, rowIndex) => {
                   const rowOffset =
                     rowIndex === 0
@@ -181,7 +180,7 @@ export default function RootChart() {
                         return (
                           <div
                             key={`${versionKey}-${item.key}`}
-                            className={`flex h-[52px] w-7 flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white/80 px-1 text-center shadow-[var(--shadow-sm)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)] sm:h-[58px] sm:w-9 lg:h-[70px] lg:w-11 ${hoverBorder}`}
+                            className={`flex h-[54px] w-[30px] flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white/80 px-1 text-center shadow-[var(--shadow-sm)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)] sm:h-[60px] sm:w-[38px] lg:h-[72px] lg:w-[46px] ${hoverBorder}`}
                           >
                             <div className="font-mono text-[10px] font-semibold leading-none text-slate-800 sm:text-xs lg:text-sm">
                               {item.key}
@@ -209,10 +208,6 @@ export default function RootChart() {
             </div>
           );
         })}
-      </div>
-      <div className="mt-4 flex items-center justify-between text-[11px] text-slate-500">
-        <span>字根图用于快速记忆键位与拆分方向。</span>
-        <span className="hidden sm:inline">建议搭配教程页练习。</span>
       </div>
     </div>
   );

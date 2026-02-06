@@ -162,7 +162,14 @@ export default function Home() {
                   <th className="py-3 pr-4">维度</th>
                   <th className="py-3 pr-4">纯拼音</th>
                   <th className="py-3 pr-4">其它音形码</th>
-                  <th className="py-3">首右辅助码</th>
+                  <th className="py-3 pl-4 pr-4 text-emerald-900 bg-emerald-50/70 border-l border-emerald-100">
+                    <div className="flex items-center gap-2 text-xs font-semibold normal-case">
+                      首右辅助码
+                      <span className="rounded-full bg-emerald-600 px-2 py-0.5 text-[10px] font-semibold text-white">
+                        推荐
+                      </span>
+                    </div>
+                  </th>
                 </tr>
               </thead>
               <tbody className="text-slate-600">
@@ -170,7 +177,7 @@ export default function Home() {
                   <td className="py-3 pr-4 font-medium text-slate-700">学习门槛</td>
                   <td className="py-3 pr-4">会拼音即可</td>
                   <td className="py-3 pr-4">字根多、规则复杂</td>
-                  <td className="py-3 font-semibold text-[var(--color-primary)]">
+                  <td className="py-3 pl-4 pr-4 font-semibold text-emerald-800 bg-emerald-50/70 border-l border-emerald-100">
                     少量核心规则，轻量上手
                   </td>
                 </tr>
@@ -178,7 +185,7 @@ export default function Home() {
                   <td className="py-3 pr-4 font-medium text-slate-700">选字负担</td>
                   <td className="py-3 pr-4">候选多需翻页</td>
                   <td className="py-3 pr-4">候选少但记忆负担大</td>
-                  <td className="py-3 font-semibold text-[var(--color-primary)]">
+                  <td className="py-3 pl-4 pr-4 font-semibold text-emerald-800 bg-emerald-50/70 border-l border-emerald-100">
                     候选少，按需补码即可锁定
                   </td>
                 </tr>
@@ -186,7 +193,7 @@ export default function Home() {
                   <td className="py-3 pr-4 font-medium text-slate-700">打字节奏</td>
                   <td className="py-3 pr-4">易被找字打断</td>
                   <td className="py-3 pr-4">较稳定但学习成本高</td>
-                  <td className="py-3 font-semibold text-[var(--color-primary)]">
+                  <td className="py-3 pl-4 pr-4 font-semibold text-emerald-800 bg-emerald-50/70 border-l border-emerald-100">
                     节奏稳定，思路不断线
                   </td>
                 </tr>
@@ -194,7 +201,7 @@ export default function Home() {
                   <td className="py-3 pr-4 font-medium text-slate-700">综合效率</td>
                   <td className="py-3 pr-4">中</td>
                   <td className="py-3 pr-4">高</td>
-                  <td className="py-3 font-semibold text-[var(--color-primary)]">
+                  <td className="py-3 pl-4 pr-4 font-semibold text-emerald-800 bg-emerald-50/70 border-l border-emerald-100">
                     高（不输同类方案）
                   </td>
                 </tr>
@@ -267,45 +274,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid gap-8 rounded-3xl border border-white/60 bg-white/80 p-8 shadow-[var(--shadow-md)] lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">快速查形</h2>
-          <p className="text-sm text-slate-600">
-            输入汉字即可查看编码、拆分与键位提示。支持批量查询。
-          </p>
-          <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-            <label className="sr-only" htmlFor="lookup-input">
-              输入汉字
-            </label>
-            <input
-              id="lookup-input"
-              className="w-full rounded-2xl border border-emerald-100 bg-white px-4 py-3 text-sm text-slate-700 shadow-[var(--shadow-sm)] focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-200"
-              placeholder="输入汉字，例如：首右"
-            />
-            <button
-              className="cursor-pointer rounded-2xl bg-[var(--color-primary)] px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:translate-y-[-1px] hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
-              type="button"
-            >
-              查询
-            </button>
-          </div>
-          <div className="text-xs text-slate-500">
-            结果将在查形工具页展示完整拆分细节。
-          </div>
-        </div>
-        <div className="rounded-2xl border border-emerald-100 bg-emerald-50/60 p-5 text-sm text-emerald-800">
-          <div className="font-mono text-xs">示例：首 → shou uf</div>
-          <div className="mt-3 text-xs text-emerald-700">
-            拆分：丷 + 自 → u + f
-          </div>
-          <div className="mt-4 text-xs text-emerald-700">
-            类型：常用字 / 可简码
-          </div>
-          <div className="mt-6 text-xs text-emerald-600">
-            * 示例数据仅用于展示，实际以码表为准
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

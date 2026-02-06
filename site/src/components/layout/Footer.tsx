@@ -1,3 +1,7 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+
 const footerLinks = [
   {
     title: "产品",
@@ -26,6 +30,12 @@ const footerLinks = [
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  if (pathname.startsWith("/tutorial")) {
+    return null;
+  }
+
   return (
     <footer className="border-t border-white/40 bg-white/70">
       <div className="mx-auto w-full max-w-6xl px-6 py-12">
