@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "教程", href: "/tutorial" },
+  { label: "练习", href: "/practice" },
   { label: "查形", href: "/lookup" },
   { label: "关于", href: "/about" },
 ];
