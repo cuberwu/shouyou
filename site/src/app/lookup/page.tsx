@@ -106,6 +106,11 @@ const parseChaifenYaml = (content: string) => {
   return dictionary;
 };
 
+const pujiChaifenDictionaryUrl = new URL(
+  "../../../resources/puji_chaifen.dict.yaml",
+  import.meta.url
+).toString();
+
 export default function LookupPage() {
   const [activeScheme, setActiveScheme] = useState<SchemeKey>("basic");
   const [query, setQuery] = useState("");
@@ -131,7 +136,7 @@ export default function LookupPage() {
       setLoadError(null);
 
       try {
-        const response = await fetch("/普及_chaifen.dict.yaml", {
+        const response = await fetch(pujiChaifenDictionaryUrl, {
           signal: controller.signal,
         });
 
