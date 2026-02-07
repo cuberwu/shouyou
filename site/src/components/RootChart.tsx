@@ -103,15 +103,15 @@ export default function RootChart() {
   const [active, setActive] = useState<VersionKey>("plus");
 
   return (
-    <div className="w-full max-w-xl rounded-3xl border border-white/60 bg-white/80 p-5 shadow-[var(--shadow-lg)] sm:p-7">
+    <div className="mx-auto flex h-full w-full min-w-0 max-w-[44rem] flex-col overflow-hidden rounded-3xl border border-white/60 bg-white/80 p-3 shadow-[var(--shadow-lg)] sm:p-7 lg:p-8">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <div className="text-sm font-semibold text-slate-800">
+          <div className="text-[clamp(0.82rem,0.35vw+0.72rem,1rem)] font-semibold text-slate-800">
             首右{rootCharts[active].label}字根图
           </div>
         </div>
         <div
-          className="flex items-center rounded-full border border-slate-200 bg-white/80 p-1 text-[11px] font-semibold"
+          className="flex items-center rounded-full border border-slate-200 bg-white/80 p-1 text-[clamp(0.62rem,0.22vw+0.56rem,0.78rem)] font-semibold"
           role="group"
           aria-label="字根图版本切换"
         >
@@ -125,7 +125,7 @@ export default function RootChart() {
                 aria-pressed={isActive}
                 aria-controls={`root-chart-${versionKey}`}
                 onClick={() => setActive(versionKey)}
-                className={`cursor-pointer rounded-full px-3 py-1 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] ${
+                className={`cursor-pointer rounded-full px-2.5 py-1 sm:px-3 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] ${
                   isActive
                     ? "text-white shadow-[var(--shadow-sm)]"
                     : "text-slate-600 hover:text-slate-800"
@@ -138,7 +138,7 @@ export default function RootChart() {
           })}
         </div>
       </div>
-      <div className="mt-4 grid">
+      <div className="mt-4 grid flex-1">
         {versionOrder.map((versionKey) => {
           const chart = rootCharts[versionKey];
           const isActive = active === versionKey;
@@ -161,18 +161,21 @@ export default function RootChart() {
                   : "pointer-events-none opacity-0 translate-y-2"
               }`}
             >
-              <div className="space-y-1 sm:space-y-2 lg:-ml-4">
+              <div className="mx-auto w-full max-w-[42rem] space-y-1.5 sm:space-y-2.5 lg:space-y-3">
                 {chart.rows.map((row, rowIndex) => {
-                  const rowOffset =
+                  const rowInsetClass =
                     rowIndex === 0
                       ? ""
                       : rowIndex === 1
-                        ? "pl-2 sm:pl-3 lg:pl-4"
-                        : "pl-4 sm:pl-6 lg:pl-8";
+                        ? "px-[4%] sm:px-[6%] lg:px-[7%]"
+                        : "px-[13%] sm:px-[15%] lg:px-[17%]";
                   return (
                     <div
                       key={`${versionKey}-row-${rowIndex}`}
-                      className={`flex justify-center gap-1 sm:gap-2 lg:gap-2.5 ${rowOffset}`}
+                      className={`grid gap-0.5 sm:gap-2 lg:gap-3 ${rowInsetClass}`}
+                      style={{
+                        gridTemplateColumns: `repeat(${row.length}, minmax(0, 1fr))`,
+                      }}
                     >
                       {row.map((item) => {
                         const radicals = splitRadicals(item.radicals);
@@ -180,16 +183,16 @@ export default function RootChart() {
                         return (
                           <div
                             key={`${versionKey}-${item.key}`}
-                            className={`flex h-[54px] w-[30px] flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white/80 px-1 text-center shadow-[var(--shadow-sm)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)] sm:h-[60px] sm:w-[38px] lg:h-[72px] lg:w-[46px] ${hoverBorder}`}
+                            className={`flex aspect-[0.7/1] min-h-[50px] w-full min-w-0 flex-col items-center justify-center rounded-2xl border border-slate-200 bg-white/80 px-0.5 text-center shadow-[var(--shadow-sm)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)] sm:min-h-[60px] sm:px-1 lg:min-h-[74px] ${hoverBorder}`}
                           >
-                            <div className="font-mono text-[10px] font-semibold leading-none text-slate-800 sm:text-xs lg:text-sm">
+                            <div className="font-mono text-[clamp(0.58rem,0.36vw+0.5rem,0.95rem)] font-semibold leading-none text-slate-800">
                               {item.key}
                             </div>
                             <div
                               className={`mt-0.5 font-semibold ${accentText} ${
                                 dense
-                                  ? "grid grid-cols-2 gap-x-1 gap-y-0 text-[8px] leading-none sm:text-[9px] lg:text-[10px]"
-                                  : "flex flex-col items-center gap-0 text-[9px] leading-none sm:text-[10px] lg:text-[11px]"
+                                  ? "grid grid-cols-2 gap-x-1 gap-y-0 text-[clamp(0.42rem,0.26vw+0.38rem,0.7rem)] leading-none"
+                                  : "flex flex-col items-center gap-0 text-[clamp(0.5rem,0.28vw+0.46rem,0.78rem)] leading-none"
                               }`}
                             >
                               {radicals.map((radical, index) => (

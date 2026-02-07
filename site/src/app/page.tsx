@@ -55,7 +55,7 @@ const versions = [
 export default function Home() {
   return (
     <main className="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 pb-20 pt-12">
-      <section className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+      <section className="grid items-center gap-10 lg:grid-cols-[1fr_1fr] lg:items-stretch">
         <div className="space-y-6">
           <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-xs font-medium text-emerald-700">
             普及版 + Plus 版双路线
@@ -88,7 +88,7 @@ export default function Home() {
             <span>支持 Windows / macOS / Linux / Android</span>
           </div>
         </div>
-        <div className="flex justify-center lg:justify-end">
+        <div className="flex justify-center lg:h-full lg:justify-end">
           <RootChart />
         </div>
       </section>
