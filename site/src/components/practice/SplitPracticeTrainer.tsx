@@ -504,32 +504,6 @@ export default function SplitPracticeTrainer({ onTopInfoChange }: SplitPracticeT
                 onMouseLeave={() => setIsHintHovering(false)}
               >
                 <div className="relative flex h-44 w-full items-center justify-center px-4 py-4">
-                  <button
-                    type="button"
-                    aria-label={isHintPinned ? "取消钉住提示" : "钉住提示"}
-                    onClick={handleHintToggle}
-                    className={`absolute right-3 top-3 inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border shadow-[var(--shadow-sm)] transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] ${
-                      isHintPinned
-                        ? "border-emerald-300 bg-emerald-100 text-emerald-700"
-                        : "border-slate-200 bg-white/90 text-slate-500 hover:border-emerald-300 hover:text-emerald-700"
-                    }`}
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      className="h-4 w-4"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M8 4h8" />
-                      <path d="M9 4v5l-3 3v2h12v-2l-3-3V4" />
-                      <path d="M12 14v6" />
-                    </svg>
-                  </button>
-
                   <div
                     key={`split-shake-${shakeTick}`}
                     className="text-center text-6xl font-semibold leading-none text-slate-900"
@@ -541,22 +515,53 @@ export default function SplitPracticeTrainer({ onTopInfoChange }: SplitPracticeT
                   </div>
                 </div>
 
-                <div
-                  className={`overflow-hidden px-3 pb-3 transition-all duration-200 ${
-                    isHintVisible ? "max-h-28 opacity-100" : "max-h-0 opacity-0"
-                  }`}
-                >
-                  <div className="w-full rounded-xl border border-emerald-200 bg-white/95 px-4 py-2 text-center text-emerald-800 shadow-[var(--shadow-sm)]">
-                    <div className="text-[11px] font-semibold uppercase tracking-[0.12em] text-emerald-700">
-                      拆分提示
+                <div className="px-3 pb-3">
+                  <div className="w-full rounded-xl border border-emerald-200 bg-white/95 text-emerald-800 shadow-[var(--shadow-sm)]">
+                    <div className="flex items-center justify-between px-4 py-2">
+                      <div className="text-[11px] font-semibold uppercase tracking-[0.12em] text-emerald-700">
+                        拆分提示
+                      </div>
+                      <button
+                        type="button"
+                        aria-label={isHintPinned ? "取消钉住提示" : "钉住提示"}
+                        onClick={handleHintToggle}
+                        className={`inline-flex h-7 w-7 cursor-pointer items-center justify-center rounded-full border transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] ${
+                          isHintPinned
+                            ? "border-emerald-300 bg-emerald-100 text-emerald-700"
+                            : "border-slate-200 bg-white text-slate-500 hover:border-emerald-300 hover:text-emerald-700"
+                        }`}
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-3.5 w-3.5"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          aria-hidden="true"
+                        >
+                          <path d="M8 4h8" />
+                          <path d="M9 4v5l-3 3v2h12v-2l-3-3V4" />
+                          <path d="M12 14v6" />
+                        </svg>
+                      </button>
                     </div>
-                    <div className="mt-1 text-base font-semibold">{splitHint}</div>
+                    <div
+                      className={`grid transition-[grid-template-rows,opacity] duration-200 ${
+                        isHintVisible ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                      }`}
+                    >
+                      <div className="overflow-hidden">
+                        <div className="px-4 pb-3 text-center text-base font-semibold">{splitHint}</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <div className="mt-3 flex flex-wrap items-center justify-center gap-2 text-xs text-slate-500">
-                鼠标悬浮显示提示；移动端点击图钉
+                悬浮/点击显示提示
               </div>
 
               <div className="mx-auto mt-5 w-full max-w-[240px]">
