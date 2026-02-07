@@ -4,6 +4,8 @@ import { useState } from "react";
 
 import RootPracticeTrainer from "@/components/practice/RootPracticeTrainer";
 import type { RootPracticeTopInfo } from "@/components/practice/RootPracticeTrainer";
+import SplitPracticeTrainer from "@/components/practice/SplitPracticeTrainer";
+import type { SplitPracticeTopInfo } from "@/components/practice/SplitPracticeTrainer";
 
 type PracticeProject = "root" | "split";
 
@@ -18,9 +20,16 @@ const initialRootTopInfo: RootPracticeTopInfo = {
   retry: "--",
 };
 
+const initialSplitTopInfo: SplitPracticeTopInfo = {
+  progress: "--",
+  accuracy: "--",
+  retry: "--",
+};
+
 export default function PracticePage() {
   const [activeProject, setActiveProject] = useState<PracticeProject>("root");
   const [rootTopInfo, setRootTopInfo] = useState<RootPracticeTopInfo>(initialRootTopInfo);
+  const [splitTopInfo, setSplitTopInfo] = useState<SplitPracticeTopInfo>(initialSplitTopInfo);
 
   const topInfoItems =
     activeProject === "root"
@@ -29,7 +38,11 @@ export default function PracticePage() {
           `正确率 ${rootTopInfo.accuracy}`,
           `回炉 ${rootTopInfo.retry}`,
         ]
-      : ["开发中"];
+      : [
+          `进度 ${splitTopInfo.progress}`,
+          `正确率 ${splitTopInfo.accuracy}`,
+          `回炉 ${splitTopInfo.retry}`,
+        ];
 
   return (
     <main className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-6 pb-20 pt-8">
@@ -84,17 +97,7 @@ export default function PracticePage() {
       {activeProject === "root" ? (
         <RootPracticeTrainer onTopInfoChange={setRootTopInfo} />
       ) : (
-        <section className="rounded-3xl border border-white/60 bg-white/85 p-6 shadow-[var(--shadow-sm)]">
-          <div className="flex items-center justify-between gap-3">
-            <h2 className="text-lg font-semibold text-slate-900">拆分练习</h2>
-            <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
-              开发中
-            </span>
-          </div>
-          <p className="mt-3 text-sm leading-relaxed text-slate-600">
-            该项目将用于字词拆分训练，强化拆分方向与编码稳定性。
-          </p>
-        </section>
+        <SplitPracticeTrainer onTopInfoChange={setSplitTopInfo} />
       )}
     </main>
   );

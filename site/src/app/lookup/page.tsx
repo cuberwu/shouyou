@@ -1,6 +1,12 @@
 "use client";
 
 import { useEffect, useMemo, useState, type FormEvent } from "react";
+import {
+  filterLookupQuery,
+  formatRadicals,
+  loadPujiChaifenDictionary,
+  type ChaifenEntry,
+} from "@/lib/chaifenData";
 
 type SchemeKey = "basic" | "plus";
 
@@ -9,12 +15,6 @@ type SchemeOption = {
   label: string;
   accent: string;
   status: "ready" | "pending";
-};
-
-type ChaifenEntry = {
-  word: string;
-  radicals: string;
-  code: string;
 };
 
 type LookupGroup = {
@@ -44,73 +44,6 @@ const lookupSteps = [
   "支持批量查询",
 ];
 
-const normalizeRadicals = (value: string) =>
-  Array.from(value).filter((item) => item.trim().length > 0);
-
-const formatRadicals = (value: string) => normalizeRadicals(value).join(" ");
-
-const filterLookupQuery = (value: string) =>
-  Array.from(value)
-    .filter((char) => /\p{Script=Han}/u.test(char))
-    .join("");
-
-const parseChaifenYaml = (content: string) => {
-  const dictionary: Record<string, ChaifenEntry[]> = {};
-  const lines = content.split(/\r?\n/);
-
-  for (const line of lines) {
-    const trimmed = line.trim();
-
-    if (
-      trimmed.length === 0 ||
-      trimmed.startsWith("#") ||
-      trimmed === "---" ||
-      trimmed === "..."
-    ) {
-      continue;
-    }
-
-    const parts = trimmed.split(/\t+/);
-    if (parts.length < 2) {
-      continue;
-    }
-
-    const word = parts[0].trim();
-    const rawPayload = parts.slice(1).join("").trim();
-    if (!word || !rawPayload) {
-      continue;
-    }
-
-    const cleanedPayload = rawPayload
-      .replace(/\s+/g, "")
-      .replace(/[^a-z]+$/i, "");
-    const match = cleanedPayload.match(/^(.*?)([a-z]+)$/i);
-    if (!match) {
-      continue;
-    }
-
-    const radicals = match[1].trim();
-    const code = match[2].toLowerCase();
-
-    if (!radicals || !code) {
-      continue;
-    }
-
-    const entry: ChaifenEntry = { word, radicals, code };
-    if (!dictionary[word]) {
-      dictionary[word] = [];
-    }
-    dictionary[word].push(entry);
-  }
-
-  return dictionary;
-};
-
-const pujiChaifenDictionaryUrl = new URL(
-  "../../../resources/puji_chaifen.dict.yaml",
-  import.meta.url
-).toString();
-
 export default function LookupPage() {
   const [activeScheme, setActiveScheme] = useState<SchemeKey>("basic");
   const [query, setQuery] = useState("");
@@ -136,20 +69,11 @@ export default function LookupPage() {
       setLoadError(null);
 
       try {
-        const response = await fetch(pujiChaifenDictionaryUrl, {
-          signal: controller.signal,
-        });
-
-        if (!response.ok) {
-          throw new Error(`码表读取失败 (${response.status})`);
-        }
-
-        const text = await response.text();
+        const parsedDictionary = await loadPujiChaifenDictionary(controller.signal);
         if (!isActive) {
           return;
         }
 
-        const parsedDictionary = parseChaifenYaml(text);
         setDictionary(parsedDictionary);
         setLoadState("ready");
       } catch (error) {
