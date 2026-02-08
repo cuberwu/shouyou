@@ -1,6 +1,12 @@
 "use client";
 
 import { useEffect, useMemo, useState, type FormEvent } from "react";
+
+import {
+  StrokeGifButton,
+  StrokeGifPanel,
+  useStrokeGif,
+} from "@/components/StrokeGif";
 import {
   filterLookupQuery,
   formatRadicals,
@@ -37,12 +43,57 @@ const schemeOptions: SchemeOption[] = [
   },
 ];
 
-const lookupSteps = [
-  "选择方案版本（普及版 / Plus 版）",
-  "输入汉字或词组",
-  "获取编码与拆分",
-  "支持批量查询",
-];
+type LookupResultCardProps = {
+  group: LookupGroup;
+};
+
+const LookupResultCard = ({ group }: LookupResultCardProps) => {
+  const {
+    isExpanded,
+    toggleExpanded,
+    gifUrl,
+    loadState,
+    onLoad,
+    onError,
+  } = useStrokeGif(group.token, group.token);
+
+  return (
+    <div className="group w-fit max-w-full rounded-xl border border-emerald-100 bg-white/70 p-3">
+      <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-semibold text-emerald-800">
+        <span className="text-3xl leading-none text-emerald-900">{group.token}</span>
+        <StrokeGifButton
+          isExpanded={isExpanded}
+          onToggle={toggleExpanded}
+          label="笔顺"
+          className="opacity-100 transition-opacity duration-200 sm:pointer-events-none sm:opacity-0 sm:group-hover:pointer-events-auto sm:group-hover:opacity-100 sm:group-focus-within:pointer-events-auto sm:group-focus-within:opacity-100"
+        />
+      </div>
+
+      <StrokeGifPanel
+        char={group.token}
+        isExpanded={isExpanded}
+        gifUrl={gifUrl}
+        loadState={loadState}
+        onLoad={onLoad}
+        onError={onError}
+        className="mt-1"
+      />
+
+      {group.entries.length > 0 ? (
+        <div className="mt-2 space-y-2 text-base text-emerald-800 sm:text-lg">
+          {group.entries.map((entry, entryIndex) => (
+            <div key={`${entry.word}-${entryIndex}`} className="space-y-1">
+              <div>编码：{entry.code}</div>
+              <div>拆分：{formatRadicals(entry.radicals)}</div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="mt-2 text-base text-emerald-600 sm:text-lg">未找到对应拆分</div>
+      )}
+    </div>
+  );
+};
 
 export default function LookupPage() {
   const [activeScheme, setActiveScheme] = useState<SchemeKey>("basic");
@@ -116,7 +167,7 @@ export default function LookupPage() {
 
   return (
     <main className="mx-auto w-full max-w-6xl px-6 pb-20 pt-12">
-      <section className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+      <section className="grid gap-8">
         <div className="rounded-3xl border border-white/60 bg-white/80 p-8 shadow-[var(--shadow-md)]">
           <div className="space-y-3">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-600">
@@ -125,9 +176,6 @@ export default function LookupPage() {
             <h1 className="text-3xl font-semibold text-slate-900 md:text-4xl">
               在线编码查询
             </h1>
-            <p className="text-sm leading-relaxed text-slate-600">
-              输入汉字即可查看编码与拆分过程，支持批量查询与特殊字标注。
-            </p>
           </div>
 
           <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -219,31 +267,10 @@ export default function LookupPage() {
                 {loadState === "ready" ? (
                   searchResults.length > 0 ? (
                     searchResults.map((group, groupIndex) => (
-                      <div
+                      <LookupResultCard
                         key={`${group.token}-${groupIndex}`}
-                        className="w-fit max-w-full rounded-xl border border-emerald-100 bg-white/70 p-3"
-                      >
-                        <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-semibold text-emerald-800">
-                          <span>{group.token}</span>
-                        </div>
-                        {group.entries.length > 0 ? (
-                          <div className="mt-2 space-y-2 text-sm text-emerald-800">
-                            {group.entries.map((entry, entryIndex) => (
-                              <div
-                                key={`${entry.word}-${entryIndex}`}
-                                className="space-y-1"
-                              >
-                                <div>编码：{entry.code}</div>
-                                <div>拆分：{formatRadicals(entry.radicals)}</div>
-                              </div>
-                            ))}
-                          </div>
-                        ) : (
-                          <div className="mt-2 text-sm text-emerald-600">
-                            未找到对应拆分
-                          </div>
-                        )}
-                      </div>
+                        group={group}
+                      />
                     ))
                   ) : (
                     <div className="w-full text-emerald-700">未找到对应拆分</div>
@@ -252,21 +279,6 @@ export default function LookupPage() {
               </div>
             </div>
           ) : null}
-        </div>
-
-        <div className="rounded-3xl border border-white/60 bg-white/80 p-8 shadow-[var(--shadow-md)]">
-          <h2 className="text-lg font-semibold text-slate-900">功能说明</h2>
-          <ul className="mt-4 space-y-3 text-sm text-slate-600">
-            {lookupSteps.map((step) => (
-              <li key={step} className="flex items-start gap-3">
-                <span className="mt-1 h-2 w-2 rounded-full bg-emerald-500" />
-                <span>{step}</span>
-              </li>
-            ))}
-          </ul>
-          <div className="mt-6 rounded-2xl bg-slate-50 p-4 text-xs text-slate-500">
-            * 当前仅接入普及版拆分码表，Plus 版数据准备中。
-          </div>
         </div>
       </section>
     </main>

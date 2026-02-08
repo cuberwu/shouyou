@@ -2,6 +2,11 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 
+import {
+  StrokeGifButton,
+  StrokeGifPanel,
+  useStrokeGif,
+} from "@/components/StrokeGif";
 import { formatRadicals } from "@/lib/chaifenData";
 import {
   loadSplitPracticeQuestions,
@@ -444,6 +449,15 @@ export default function SplitPracticeTrainer({ onTopInfoChange }: SplitPracticeT
     return currentQuestion.radicals ? formatRadicals(currentQuestion.radicals) : "未找到拆分";
   }, [activeScheme, currentQuestion]);
 
+  const {
+    isExpanded: isStrokeGifExpanded,
+    toggleExpanded: toggleStrokeGifExpanded,
+    gifUrl: strokeGifUrl,
+    loadState: strokeGifLoadState,
+    onLoad: handleStrokeGifLoad,
+    onError: handleStrokeGifError,
+  } = useStrokeGif(currentQuestion?.word ?? "", currentQuestion?.id ?? "");
+
   const isHintVisible = isHintPinned || isHintHovering;
 
   const handleHintToggle = () => {
@@ -521,31 +535,38 @@ export default function SplitPracticeTrainer({ onTopInfoChange }: SplitPracticeT
                       <div className="text-[11px] font-semibold uppercase tracking-[0.12em] text-emerald-700">
                         拆分提示
                       </div>
-                      <button
-                        type="button"
-                        aria-label={isHintPinned ? "取消钉住提示" : "钉住提示"}
-                        onClick={handleHintToggle}
-                        className={`inline-flex h-7 w-7 cursor-pointer items-center justify-center rounded-full border transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] ${
-                          isHintPinned
-                            ? "border-emerald-300 bg-emerald-100 text-emerald-700"
-                            : "border-slate-200 bg-white text-slate-500 hover:border-emerald-300 hover:text-emerald-700"
-                        }`}
-                      >
-                        <svg
-                          viewBox="0 0 24 24"
-                          className="h-3.5 w-3.5"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          aria-hidden="true"
+                      <div className="flex items-center gap-2">
+                        <StrokeGifButton
+                          isExpanded={isStrokeGifExpanded}
+                          onToggle={toggleStrokeGifExpanded}
+                          label="笔顺"
+                        />
+                        <button
+                          type="button"
+                          aria-label={isHintPinned ? "取消钉住提示" : "钉住提示"}
+                          onClick={handleHintToggle}
+                          className={`inline-flex h-7 w-7 cursor-pointer items-center justify-center rounded-full border transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] ${
+                            isHintPinned
+                              ? "border-emerald-300 bg-emerald-100 text-emerald-700"
+                              : "border-slate-200 bg-white text-slate-500 hover:border-emerald-300 hover:text-emerald-700"
+                          }`}
                         >
-                          <path d="M8 4h8" />
-                          <path d="M9 4v5l-3 3v2h12v-2l-3-3V4" />
-                          <path d="M12 14v6" />
-                        </svg>
-                      </button>
+                          <svg
+                            viewBox="0 0 24 24"
+                            className="h-3.5 w-3.5"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            aria-hidden="true"
+                          >
+                            <path d="M8 4h8" />
+                            <path d="M9 4v5l-3 3v2h12v-2l-3-3V4" />
+                            <path d="M12 14v6" />
+                          </svg>
+                        </button>
+                      </div>
                     </div>
                     <div
                       className={`grid transition-[grid-template-rows,opacity] duration-200 ${
@@ -553,6 +574,15 @@ export default function SplitPracticeTrainer({ onTopInfoChange }: SplitPracticeT
                       }`}
                     >
                       <div className="overflow-hidden">
+                        <StrokeGifPanel
+                          char={currentQuestion.word}
+                          isExpanded={isStrokeGifExpanded}
+                          gifUrl={strokeGifUrl}
+                          loadState={strokeGifLoadState}
+                          onLoad={handleStrokeGifLoad}
+                          onError={handleStrokeGifError}
+                          className="px-4"
+                        />
                         <div className="px-4 pb-3 text-center text-base font-semibold">{splitHint}</div>
                       </div>
                     </div>

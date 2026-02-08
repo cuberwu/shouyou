@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 
 const navLinks = [
   { label: "教程", href: "/tutorial" },
@@ -12,6 +13,41 @@ const navLinks = [
 
 export default function Header() {
   const pathname = usePathname();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement | null>(null);
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  useEffect(() => {
+    closeMobileMenu();
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) {
+      return;
+    }
+
+    const handlePointerDown = (event: PointerEvent) => {
+      if (!mobileMenuRef.current) {
+        return;
+      }
+
+      if (mobileMenuRef.current.contains(event.target as Node)) {
+        return;
+      }
+
+      closeMobileMenu();
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+    };
+  }, [isMobileMenuOpen]);
+
   const displayLinks =
     pathname === "/"
       ? navLinks
@@ -48,14 +84,6 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://github.com"
-            className="cursor-pointer text-slate-500 transition-colors duration-200 hover:text-[var(--color-primary)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
           <Link
             href="/download"
             className="cursor-pointer rounded-full bg-[var(--color-cta)] px-4 py-2 text-white transition-all duration-200 hover:translate-y-[-1px] hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-cta)]"
@@ -64,36 +92,43 @@ export default function Header() {
           </Link>
         </nav>
 
-        <details className="group lg:hidden">
-          <summary className="cursor-pointer list-none rounded-full border border-slate-200 px-3 py-2 text-sm font-medium text-slate-700 transition-colors duration-200 hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]">
+        <div ref={mobileMenuRef} className="relative lg:hidden">
+          <button
+            type="button"
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-nav-menu"
+            className="cursor-pointer rounded-full border border-slate-200 px-3 py-2 text-sm font-medium text-slate-700 transition-colors duration-200 hover:border-[var(--color-primary)] hover:text-[var(--color-primary)]"
+            onClick={() => {
+              setIsMobileMenuOpen((prev) => !prev);
+            }}
+          >
             菜单
-          </summary>
-          <div className="mt-3 flex flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-700 shadow-[var(--shadow-md)]">
-            {displayLinks.map((link) => (
+          </button>
+          {isMobileMenuOpen ? (
+            <div
+              id="mobile-nav-menu"
+              className="absolute right-0 mt-3 flex w-56 flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-700 shadow-[var(--shadow-md)]"
+            >
+              {displayLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="cursor-pointer transition-colors duration-200 hover:text-[var(--color-primary)]"
+                  onClick={closeMobileMenu}
+                >
+                  {link.label}
+                </Link>
+              ))}
               <Link
-                key={link.href}
-                href={link.href}
-                className="cursor-pointer transition-colors duration-200 hover:text-[var(--color-primary)]"
+                href="/download"
+                className="cursor-pointer rounded-full bg-[var(--color-cta)] px-4 py-2 text-center text-white transition-all duration-200 hover:opacity-90"
+                onClick={closeMobileMenu}
               >
-                {link.label}
+                立即下载
               </Link>
-            ))}
-            <a
-              href="https://github.com"
-              className="cursor-pointer text-slate-500 transition-colors duration-200 hover:text-[var(--color-primary)]"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-            <Link
-              href="/download"
-              className="cursor-pointer rounded-full bg-[var(--color-cta)] px-4 py-2 text-center text-white transition-all duration-200 hover:opacity-90"
-            >
-              立即下载
-            </Link>
-          </div>
-        </details>
+            </div>
+          ) : null}
+        </div>
       </div>
     </header>
   );

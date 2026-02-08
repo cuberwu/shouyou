@@ -28,9 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body className="bg-[var(--color-background)] text-[var(--color-text)] antialiased">
+      <body className="flex min-h-screen flex-col bg-[var(--color-background)] text-[var(--color-text)] antialiased">
         <Header />
-        {children}
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>
