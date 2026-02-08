@@ -1,3 +1,7 @@
+"use client";
+
+import { useInView } from "@/hooks/useInView";
+
 const downloads = [
   {
     title: "Windows",
@@ -32,9 +36,19 @@ const downloads = [
 ];
 
 export default function DownloadPage() {
+  const { ref: headerRef, isInView: headerInView } = useInView();
+  const { ref: gridRef, isInView: gridInView } = useInView();
+
   return (
     <main className="mx-auto w-full max-w-6xl px-6 pb-20 pt-12">
-      <section className="rounded-3xl border border-white/60 bg-white/80 p-8 shadow-[var(--shadow-md)]">
+      <section
+        ref={headerRef}
+        className={`rounded-3xl border border-white/60 bg-white/80 p-8 shadow-[var(--shadow-md)] transition-all duration-600 ease-out ${
+          headerInView
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-8"
+        }`}
+      >
         <div className="max-w-2xl space-y-3">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-600">
             下载中心
@@ -48,11 +62,18 @@ export default function DownloadPage() {
         </div>
       </section>
 
-      <section className="mt-10 grid gap-6 md:grid-cols-2">
-        {downloads.map((item) => (
+      <section ref={gridRef} className="mt-10 grid gap-6 md:grid-cols-2">
+        {downloads.map((item, index) => (
           <div
             key={item.title}
-            className="rounded-3xl border border-emerald-100 bg-white/80 p-6 shadow-[var(--shadow-sm)] transition-all duration-200 hover:translate-y-[-2px] hover:shadow-[var(--shadow-md)]"
+            className={`rounded-3xl border border-emerald-100 bg-white/80 p-6 shadow-[var(--shadow-sm)] transition-all duration-200 hover:translate-y-[-2px] hover:shadow-[var(--shadow-md)] ${
+              gridInView ? "animate-fade-in-up" : "opacity-0"
+            }`}
+            style={
+              gridInView
+                ? { animationDelay: `${index * 80}ms` }
+                : undefined
+            }
           >
             <div className="text-lg font-semibold text-slate-900">
               {item.title}
@@ -62,7 +83,7 @@ export default function DownloadPage() {
               {item.actions.map((action) => (
                 <button
                   key={action}
-                  className="cursor-pointer rounded-full border border-emerald-200 px-4 py-2 text-xs font-semibold text-emerald-700 transition-colors duration-200 hover:border-emerald-400 hover:text-emerald-800"
+                  className="cursor-pointer rounded-full border border-emerald-200 px-4 py-2 text-xs font-semibold text-emerald-700 transition-all duration-200 hover:border-emerald-400 hover:text-emerald-800 active:scale-[0.97]"
                   type="button"
                 >
                   {action}

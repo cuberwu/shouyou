@@ -1,5 +1,10 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
+
 import RootChart from "../components/RootChart";
+import { useInView } from "@/hooks/useInView";
 
 const features = [
   {
@@ -53,47 +58,103 @@ const versions = [
 ];
 
 export default function Home() {
+  const [heroVisible, setHeroVisible] = useState(false);
+
+  const { ref: versionsRef, isInView: versionsInView } = useInView();
+  const { ref: comparisonRef, isInView: comparisonInView } = useInView();
+  const { ref: featuresRef, isInView: featuresInView } = useInView();
+  const { ref: pathRef, isInView: pathInView } = useInView();
+
+  useEffect(() => {
+    const timer = requestAnimationFrame(() => setHeroVisible(true));
+    return () => cancelAnimationFrame(timer);
+  }, []);
+
   return (
     <main className="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 pb-20 pt-12">
+      {/* Hero */}
       <section className="grid items-center gap-10 lg:grid-cols-[1fr_1fr] lg:items-stretch">
         <div className="space-y-6">
-          <div className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-xs font-medium text-emerald-700">
+          <div
+            className={`inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-xs font-medium text-emerald-700 transition-all duration-600 ease-out ${
+              heroVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-6"
+            }`}
+          >
             普及版 + Plus 版双路线
           </div>
-          <h1 className="text-4xl font-semibold leading-tight text-slate-900 md:text-5xl">
+          <h1
+            className={`text-4xl font-semibold leading-tight text-slate-900 md:text-5xl transition-all duration-600 ease-out delay-100 ${
+              heroVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-6"
+            }`}
+          >
             首右辅助码
             <span className="block text-[var(--color-primary)]">
               高效中文输入方案
             </span>
           </h1>
-          <p className="max-w-xl text-base leading-relaxed text-slate-600">
+          <p
+            className={`max-w-xl text-base leading-relaxed text-slate-600 transition-all duration-600 ease-out delay-200 ${
+              heroVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-6"
+            }`}
+          >
             低重码、舒适手感与系统教程集成，支持在线查形与多平台配置，帮助你快速建立高效输入习惯。
           </p>
-          <div className="flex flex-wrap gap-4">
+          <div
+            className={`flex flex-wrap gap-4 transition-all duration-600 ease-out delay-300 ${
+              heroVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-6"
+            }`}
+          >
             <Link
               href="/tutorial"
-              className="cursor-pointer rounded-full bg-[var(--color-cta)] px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:translate-y-[-1px] hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-cta)]"
+              className="cursor-pointer rounded-full bg-[var(--color-cta)] px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:translate-y-[-1px] hover:opacity-90 active:scale-[0.97] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-cta)]"
             >
               开始学习
             </Link>
             <Link
               href="/download"
-              className="cursor-pointer rounded-full border border-emerald-200 px-6 py-3 text-sm font-semibold text-emerald-700 transition-colors duration-200 hover:border-emerald-400 hover:text-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
+              className="cursor-pointer rounded-full border border-emerald-200 px-6 py-3 text-sm font-semibold text-emerald-700 transition-all duration-200 hover:border-emerald-400 hover:text-emerald-800 active:scale-[0.97] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
             >
               立即下载
             </Link>
           </div>
-          <div className="flex flex-wrap items-center gap-6 text-xs text-slate-500">
+          <div
+            className={`flex flex-wrap items-center gap-6 text-xs text-slate-500 transition-all duration-500 ease-out delay-400 ${
+              heroVisible ? "opacity-100" : "opacity-0"
+            }`}
+          >
             <span>适配 Rime / 小胖 / 多多</span>
             <span>支持 Windows / macOS / Linux / Android</span>
           </div>
         </div>
-        <div className="flex justify-center lg:h-full lg:justify-end">
+        <div
+          className={`flex justify-center lg:h-full lg:justify-end transition-all duration-700 ease-out delay-200 ${
+            heroVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-8"
+          }`}
+        >
           <RootChart />
         </div>
       </section>
 
-      <section id="versions" className="space-y-6">
+      {/* 版本对比 */}
+      <section
+        ref={versionsRef}
+        id="versions"
+        className={`space-y-6 transition-all duration-600 ease-out ${
+          versionsInView
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-8"
+        }`}
+      >
         <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-semibold text-slate-900">普及版 / Plus 版对比</h2>
           <p className="text-sm text-slate-600">
@@ -101,10 +162,17 @@ export default function Home() {
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
-          {versions.map((version) => (
+          {versions.map((version, index) => (
             <div
               key={version.name}
-              className="rounded-3xl border border-white/60 bg-white/80 p-6 shadow-[var(--shadow-md)] transition-all duration-200 hover:translate-y-[-2px] hover:shadow-[var(--shadow-lg)]"
+              className={`rounded-3xl border border-white/60 bg-white/80 p-6 shadow-[var(--shadow-md)] transition-all duration-200 hover:translate-y-[-2px] hover:shadow-[var(--shadow-lg)] ${
+                versionsInView ? "animate-fade-in-up" : "opacity-0"
+              }`}
+              style={
+                versionsInView
+                  ? { animationDelay: `${index * 120}ms` }
+                  : undefined
+              }
             >
               <div className="flex items-center justify-between">
                 <div>
@@ -144,7 +212,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="comparison" className="space-y-6">
+      {/* 横向对比 */}
+      <section
+        ref={comparisonRef}
+        id="comparison"
+        className={`space-y-6 transition-all duration-600 ease-out ${
+          comparisonInView
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-8"
+        }`}
+      >
         <div>
           <h2 className="text-2xl font-semibold text-slate-900">
             横向对比：简单易学但效率不输
@@ -154,7 +231,11 @@ export default function Home() {
           </p>
         </div>
         <div className="grid gap-6 lg:grid-cols-[1.4fr_0.6fr]">
-          <div className="overflow-x-auto rounded-3xl border border-white/60 bg-white/80 p-6 shadow-[var(--shadow-sm)]">
+          <div
+            className={`overflow-x-auto rounded-3xl border border-white/60 bg-white/80 p-6 shadow-[var(--shadow-sm)] ${
+              comparisonInView ? "animate-fade-in-up" : "opacity-0"
+            }`}
+          >
             <table className="w-full min-w-[520px] text-left text-sm">
               <caption className="sr-only">输入法方案横向对比</caption>
               <thead className="text-xs uppercase text-slate-500">
@@ -208,7 +289,12 @@ export default function Home() {
               </tbody>
             </table>
           </div>
-          <div className="rounded-3xl border border-emerald-100 bg-emerald-50/70 p-6">
+          <div
+            className={`rounded-3xl border border-emerald-100 bg-emerald-50/70 p-6 ${
+              comparisonInView ? "animate-fade-in-up" : "opacity-0"
+            }`}
+            style={comparisonInView ? { animationDelay: "120ms" } : undefined}
+          >
             <div className="text-sm font-semibold text-emerald-800">
               简单 × 高效
             </div>
@@ -224,7 +310,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="space-y-6">
+      {/* 核心特点 */}
+      <section
+        ref={featuresRef}
+        className={`space-y-6 transition-all duration-600 ease-out ${
+          featuresInView
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-8"
+        }`}
+      >
         <div>
           <h2 className="text-2xl font-semibold text-slate-900">核心特点</h2>
           <p className="text-sm text-slate-600">
@@ -232,10 +326,17 @@ export default function Home() {
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
-          {features.map((feature) => (
+          {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="rounded-3xl border border-emerald-100 bg-white/80 p-6 shadow-[var(--shadow-sm)] transition-all duration-200 hover:translate-y-[-2px] hover:shadow-[var(--shadow-md)]"
+              className={`rounded-3xl border border-emerald-100 bg-white/80 p-6 shadow-[var(--shadow-sm)] transition-all duration-200 hover:translate-y-[-2px] hover:shadow-[var(--shadow-md)] ${
+                featuresInView ? "animate-fade-in-up" : "opacity-0"
+              }`}
+              style={
+                featuresInView
+                  ? { animationDelay: `${index * 80}ms` }
+                  : undefined
+              }
             >
               <div className="text-base font-semibold text-slate-900">
                 {feature.title}
@@ -251,7 +352,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="path" className="rounded-3xl border border-white/60 bg-white/80 p-8 shadow-[var(--shadow-md)]">
+      {/* 学习路线 */}
+      <section
+        ref={pathRef}
+        id="path"
+        className={`rounded-3xl border border-white/60 bg-white/80 p-8 shadow-[var(--shadow-md)] transition-all duration-600 ease-out ${
+          pathInView
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-8"
+        }`}
+      >
         <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-semibold text-slate-900">学习路线</h2>
           <p className="text-sm text-slate-600">循序渐进，配合查形工具提升记忆效率。</p>
@@ -260,10 +370,26 @@ export default function Home() {
           {steps.map((step, index) => (
             <div
               key={step.title}
-              className="rounded-2xl border border-emerald-100 bg-emerald-50/60 p-4"
+              className={`rounded-2xl border border-emerald-100 bg-emerald-50/60 p-4 ${
+                pathInView ? "animate-fade-in-up" : "opacity-0"
+              }`}
+              style={
+                pathInView
+                  ? { animationDelay: `${index * 120}ms` }
+                  : undefined
+              }
             >
-              <div className="text-xs font-semibold text-emerald-700">
-                第 {index + 1} 步
+              <div
+                className={`inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-600 text-xs font-bold text-white ${
+                  pathInView ? "animate-bounce-in" : "opacity-0"
+                }`}
+                style={
+                  pathInView
+                    ? { animationDelay: `${index * 120 + 200}ms` }
+                    : undefined
+                }
+              >
+                {index + 1}
               </div>
               <div className="mt-2 text-base font-semibold text-slate-900">
                 {step.title}

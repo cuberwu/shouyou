@@ -56,6 +56,7 @@ type PersistedRootPracticeState = {
   version: 2;
   activeScheme: PracticeSchemeKey;
   schemes: Partial<Record<PracticeSchemeKey, SchemeProgressSnapshot>>;
+  showKeyboardChart: boolean;
 };
 
 const toSnapshotFromState = (params: {
@@ -151,6 +152,8 @@ const normalizePersistedState = (): PersistedRootPracticeState | null => {
   if (version === 2) {
     const data = parsed as Partial<PersistedRootPracticeState>;
     const activeScheme: PracticeSchemeKey = data.activeScheme === "plus" ? "plus" : "basic";
+    const showKeyboardChart =
+      typeof data.showKeyboardChart === "boolean" ? data.showKeyboardChart : false;
     const schemesObject =
       data.schemes && typeof data.schemes === "object"
         ? (data.schemes as Partial<Record<PracticeSchemeKey, unknown>>)
@@ -168,6 +171,7 @@ const normalizePersistedState = (): PersistedRootPracticeState | null => {
       version: 2,
       activeScheme,
       schemes,
+      showKeyboardChart,
     };
   }
 
@@ -193,6 +197,7 @@ const normalizePersistedState = (): PersistedRootPracticeState | null => {
       schemes: {
         [activeScheme]: legacySnapshot,
       },
+      showKeyboardChart: false,
     };
   }
 
@@ -212,7 +217,7 @@ export default function RootPracticeTrainer({ onTopInfoChange }: RootPracticeTra
   const [wrongOnCurrent, setWrongOnCurrent] = useState(false);
   const [shakeTick, setShakeTick] = useState(0);
   const [isStorageReady, setIsStorageReady] = useState(false);
-  const [showKeyboardChart, setShowKeyboardChart] = useState(true);
+  const [showKeyboardChart, setShowKeyboardChart] = useState(false);
   const [feedback, setFeedback] = useState<
     | { type: "success"; message: string }
     | { type: "error"; message: string; expected: string }
@@ -260,6 +265,7 @@ export default function RootPracticeTrainer({ onTopInfoChange }: RootPracticeTra
         setCorrectAttempts(initialSnapshot.correctAttempts);
         setCompletedSet(new Set(initialSnapshot.completedQuestionIds));
         setWrongOnCurrent(initialSnapshot.wrongOnCurrent);
+        setShowKeyboardChart(false);
         return;
       }
 
@@ -273,6 +279,7 @@ export default function RootPracticeTrainer({ onTopInfoChange }: RootPracticeTra
       setCorrectAttempts(snapshot.correctAttempts);
       setCompletedSet(new Set(snapshot.completedQuestionIds));
       setWrongOnCurrent(snapshot.wrongOnCurrent);
+      setShowKeyboardChart(persisted.showKeyboardChart);
     } catch {
       // ignore malformed local data
     } finally {
@@ -289,6 +296,7 @@ export default function RootPracticeTrainer({ onTopInfoChange }: RootPracticeTra
     const payload: PersistedRootPracticeState = {
       version: 2,
       activeScheme,
+      showKeyboardChart,
       schemes: {
         ...(existing?.schemes ?? {}),
         [activeScheme]: toSnapshotFromState({
@@ -316,6 +324,7 @@ export default function RootPracticeTrainer({ onTopInfoChange }: RootPracticeTra
     correctAttempts,
     completedSet,
     wrongOnCurrent,
+    showKeyboardChart,
   ]);
 
   useEffect(() => {
@@ -427,6 +436,7 @@ export default function RootPracticeTrainer({ onTopInfoChange }: RootPracticeTra
         JSON.stringify({
           version: 2,
           activeScheme: scheme,
+          showKeyboardChart,
           schemes: nextSchemes,
         } satisfies PersistedRootPracticeState)
       );
@@ -533,7 +543,7 @@ export default function RootPracticeTrainer({ onTopInfoChange }: RootPracticeTra
               </div>
             </>
           ) : (
-            <div className="space-y-2">
+            <div className="space-y-2 animate-fade-in">
               <div className="text-lg font-semibold text-slate-900">本轮练习完成</div>
               <div className="text-sm text-slate-600">
                 已完成全部字根题目，可立即开始下一轮随机练习。
@@ -543,7 +553,8 @@ export default function RootPracticeTrainer({ onTopInfoChange }: RootPracticeTra
 
           {feedback && !completed ? (
             <div
-              className={`mt-4 rounded-xl px-3 py-2 text-sm ${
+              key={`feedback-${attempts}`}
+              className={`mt-4 rounded-xl px-3 py-2 text-sm animate-fade-in ${
                 feedback.type === "success"
                   ? "border border-emerald-300 bg-emerald-100 text-emerald-900"
                   : "border border-red-300 bg-red-100 text-red-900"

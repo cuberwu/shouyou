@@ -612,7 +612,7 @@ export default function SplitPracticeTrainer({ onTopInfoChange }: SplitPracticeT
               </div>
             </>
           ) : (
-            <div className="space-y-2">
+            <div className="space-y-2 animate-fade-in">
               <div className="text-lg font-semibold text-slate-900">本轮练习完成</div>
               <div className="text-sm text-slate-600">
                 已完成全部拆分题目，可立即开始下一轮随机练习。
@@ -622,7 +622,8 @@ export default function SplitPracticeTrainer({ onTopInfoChange }: SplitPracticeT
 
           {feedback && !completed ? (
             <div
-              className={`mt-4 rounded-xl px-3 py-2 text-sm ${
+              key={`feedback-${attempts}`}
+              className={`mt-4 rounded-xl px-3 py-2 text-sm animate-fade-in ${
                 feedback.type === "success"
                   ? "border border-emerald-300 bg-emerald-100 text-emerald-900"
                   : "border border-red-300 bg-red-100 text-red-900"

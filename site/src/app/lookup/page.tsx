@@ -248,7 +248,7 @@ export default function LookupPage() {
           </form>
 
           {submittedQuery ? (
-            <div className="mt-6 rounded-2xl border border-emerald-100 bg-emerald-50/70 p-4 text-sm text-emerald-800">
+            <div className="mt-6 rounded-2xl border border-emerald-100 bg-emerald-50/70 p-4 text-sm text-emerald-800 animate-fade-in-up">
               <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-semibold text-emerald-700">
                 <span>查询结果</span>
                 <span className="rounded-full bg-white/80 px-2 py-0.5 text-[10px] text-emerald-700">
@@ -267,10 +267,15 @@ export default function LookupPage() {
                 {loadState === "ready" ? (
                   searchResults.length > 0 ? (
                     searchResults.map((group, groupIndex) => (
-                      <LookupResultCard
+                      <div
                         key={`${group.token}-${groupIndex}`}
-                        group={group}
-                      />
+                        className="animate-fade-in-up"
+                        style={{ animationDelay: `${groupIndex * 60}ms` }}
+                      >
+                        <LookupResultCard
+                          group={group}
+                        />
+                      </div>
                     ))
                   ) : (
                     <div className="w-full text-emerald-700">未找到对应拆分</div>
