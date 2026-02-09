@@ -111,7 +111,7 @@ export default function AboutPage() {
             <h2 className="text-lg font-semibold text-slate-900">联系方式</h2>
             <ul className="mt-3 space-y-2 text-sm text-slate-600">
               <li>官方邮箱：hello@example.com</li>
-              <li>QQ群：待创建</li>
+              <li>QQ群：1005059742</li>
               <li>GitHub：github.com</li>
             </ul>
           </div>

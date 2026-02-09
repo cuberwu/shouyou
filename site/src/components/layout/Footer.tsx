@@ -1,6 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import { usePathname } from "next/navigation";
+import logoImage from "@/logo.jpg";
 
 const footerLinks = [
   {
@@ -22,8 +24,8 @@ const footerLinks = [
   {
     title: "社区",
     items: [
-      { label: "GitHub", href: "https://github.com" },
-      { label: "QQ 群", href: "#" },
+      { label: "GitHub", href: "https://github.com/shouyou" },
+      { label: "QQ 群", href: "https://qm.qq.com/q/1jfFcpqhX0" },
       { label: "邮箱", href: "mailto:hello@example.com" },
     ],
   },
@@ -42,9 +44,13 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-[2fr_3fr]">
           <div>
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--color-primary)] text-sm font-semibold text-white">
-                首右
-              </div>
+              <Image
+                src={logoImage}
+                alt="首右辅助码 Logo"
+                width={40}
+                height={40}
+                className="h-10 w-10 rounded-xl object-cover"
+              />
               <div>
                 <div className="text-base font-semibold">首右辅助码</div>
                 <div className="text-sm text-slate-600">高效中文输入方案</div>

@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import logoImage from "@/logo.jpg";
 
 const navLinks = [
   { label: "教程", href: "/tutorial" },
@@ -66,9 +68,14 @@ export default function Header() {
           className="flex items-center gap-3 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
           aria-label="首右辅助码首页"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--color-primary)] text-sm font-semibold text-white">
-            首右
-          </div>
+          <Image
+            src={logoImage}
+            alt="首右辅助码 Logo"
+            width={40}
+            height={40}
+            className="h-10 w-10 rounded-xl object-cover"
+            priority
+          />
           <div className="leading-tight">
             <div className="text-base font-semibold text-[var(--color-text)]">
               首右辅助码
