@@ -55,8 +55,12 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/40 bg-white/50 backdrop-blur-2xl backdrop-saturate-150 shadow-[0_1px_3px_rgba(0,0,0,0.06),inset_0_1px_0_rgba(255,255,255,0.6)]">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-4">
+    <header
+      className={`sticky top-0 z-50 border-b border-white/40 bg-white/50 shadow-[0_1px_3px_rgba(0,0,0,0.06),inset_0_1px_0_rgba(255,255,255,0.6)] ${
+        isMobileMenuOpen ? "" : "backdrop-blur-2xl backdrop-saturate-150"
+      } lg:backdrop-blur-2xl lg:backdrop-saturate-150`}
+    >
+      <div className="relative mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-4">
         <Link
           href="/"
           className="flex items-center gap-3 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
@@ -94,7 +98,7 @@ export default function Header() {
           </Link>
         </nav>
 
-        <div ref={mobileMenuRef} className="relative flex items-center gap-3 lg:hidden">
+        <div ref={mobileMenuRef} className="flex items-center gap-3 lg:hidden">
           <button
             type="button"
             aria-label={isMobileMenuOpen ? "收起导航菜单" : "展开导航菜单"}
@@ -144,10 +148,10 @@ export default function Header() {
           <div
             id="mobile-nav-menu"
             aria-hidden={!isMobileMenuOpen}
-            className={`absolute right-0 top-[calc(100%+10px)] z-50 flex w-[calc(100vw-2rem)] flex-col items-center gap-6 overflow-hidden rounded-3xl border border-white/70 bg-[rgba(252,250,248,0.95)] text-slate-700 shadow-[0_10px_40px_-10px_rgba(122,71,50,0.18)] backdrop-blur-[24px] transition-[max-height,opacity,transform,padding,visibility] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] origin-top-right ${
+            className={`absolute left-1/2 top-[calc(100%+10px)] z-50 flex w-[calc(100vw-2rem)] max-w-md -translate-x-1/2 flex-col items-center gap-6 overflow-hidden rounded-3xl border border-white/40 bg-[linear-gradient(140deg,rgba(255,255,255,0.38),rgba(255,255,255,0.16)_40%,rgba(255,255,255,0.1))] text-slate-700 shadow-[0_18px_40px_-24px_rgba(15,23,42,0.55),0_2px_10px_rgba(255,255,255,0.18),inset_0_1px_0_rgba(255,255,255,0.62)] backdrop-blur-md backdrop-saturate-[1.65] transition-[max-height,opacity,transform,padding,visibility] duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] origin-top ${
               isMobileMenuOpen
-                ? "visible max-h-[320px] px-6 py-8 opacity-100 translate-y-0 scale-100 pointer-events-auto"
-                : "invisible max-h-0 px-6 py-0 opacity-0 -translate-y-2 scale-[0.98] pointer-events-none"
+                ? "visible max-h-[320px] px-6 py-8 opacity-100 translate-y-0 pointer-events-auto"
+                : "invisible max-h-0 px-6 py-0 opacity-0 -translate-y-2 pointer-events-none"
             }`}
           >
             {displayLinks.map((link, index) => (
