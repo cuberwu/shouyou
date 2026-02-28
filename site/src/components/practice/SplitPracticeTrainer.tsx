@@ -442,12 +442,8 @@ export default function SplitPracticeTrainer({ onTopInfoChange }: SplitPracticeT
       return "--";
     }
 
-    if (activeScheme === "plus") {
-      return "数据准备中";
-    }
-
     return currentQuestion.radicals ? formatRadicals(currentQuestion.radicals) : "未找到拆分";
-  }, [activeScheme, currentQuestion]);
+  }, [currentQuestion]);
 
   const {
     isExpanded: isStrokeGifExpanded,

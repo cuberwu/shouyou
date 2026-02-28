@@ -10,6 +10,7 @@ import {
 import {
   filterLookupQuery,
   formatRadicals,
+  loadPlusChaifenDictionary,
   loadPujiChaifenDictionary,
   type ChaifenEntry,
 } from "@/lib/chaifenData";
@@ -20,7 +21,7 @@ type SchemeOption = {
   key: SchemeKey;
   label: string;
   accent: string;
-  status: "ready" | "pending";
+  status: "ready";
 };
 
 type LookupGroup = {
@@ -39,7 +40,7 @@ const schemeOptions: SchemeOption[] = [
     key: "plus",
     label: "Plus 版",
     accent: "var(--color-plus)",
-    status: "pending",
+    status: "ready",
   },
 ];
 
@@ -120,7 +121,10 @@ export default function LookupPage() {
       setLoadError(null);
 
       try {
-        const parsedDictionary = await loadPujiChaifenDictionary(controller.signal);
+        const parsedDictionary =
+          activeScheme === "basic"
+            ? await loadPujiChaifenDictionary(controller.signal)
+            : await loadPlusChaifenDictionary(controller.signal);
         if (!isActive) {
           return;
         }
@@ -145,7 +149,7 @@ export default function LookupPage() {
       isActive = false;
       controller.abort();
     };
-  }, []);
+  }, [activeScheme]);
 
   const searchResults = useMemo<LookupGroup[]>(() => {
     const normalizedQuery = filterLookupQuery(submittedQuery);
@@ -189,23 +193,16 @@ export default function LookupPage() {
             >
               {schemeOptions.map((option) => {
                 const isActive = activeScheme === option.key;
-                const isDisabled = option.status === "pending";
                 return (
                   <button
                     key={option.key}
                     type="button"
                     aria-pressed={isActive}
-                    aria-disabled={isDisabled}
-                    disabled={isDisabled}
                     onClick={() => {
-                      if (!isDisabled) {
-                        setActiveScheme(option.key);
-                      }
+                      setActiveScheme(option.key);
                     }}
                     className={`flex items-center gap-2 rounded-full px-3 py-1 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] ${
-                      isDisabled
-                        ? "cursor-not-allowed text-slate-400"
-                        : "cursor-pointer text-slate-600 hover:text-slate-800"
+                      "cursor-pointer text-slate-600 hover:text-slate-800"
                     } ${
                       isActive
                         ? "text-white shadow-[var(--shadow-sm)]"
@@ -214,18 +211,11 @@ export default function LookupPage() {
                     style={isActive ? { background: option.accent } : undefined}
                   >
                     <span>{option.label}</span>
-                    {option.status === "pending" ? (
-                      <span className="rounded-full bg-white/80 px-1.5 py-0.5 text-[10px] font-semibold text-slate-500">
-                        未就绪
-                      </span>
-                    ) : null}
                   </button>
                 );
               })}
             </div>
-            <span className="text-xs text-slate-500">
-              普及版数据已接入，Plus 版准备中。
-            </span>
+            <span className="text-xs text-slate-500">普及版与 Plus 版数据均已接入。</span>
           </div>
 
           <form className="mt-6 flex flex-col gap-3 sm:flex-row" onSubmit={handleSubmit}>

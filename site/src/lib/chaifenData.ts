@@ -18,6 +18,11 @@ const pujiChaifenDictionaryUrl = new URL(
   import.meta.url
 ).toString();
 
+const plusChaifenDictionaryUrl = new URL(
+  "../../resources/plus_chaifen.dict.yaml",
+  import.meta.url
+).toString();
+
 const splitAuxDictionaryUrls: Record<PracticeSchemeKey, string> = {
   basic: new URL("../../resources/前1500字_普及版辅助码.txt", import.meta.url).toString(),
   plus: new URL("../../resources/前1500字_plus辅助码.txt", import.meta.url).toString(),
@@ -150,6 +155,13 @@ export const loadPujiChaifenDictionary = async (
   signal?: AbortSignal
 ): Promise<ChaifenDictionary> => {
   const content = await fetchTextResource(pujiChaifenDictionaryUrl, signal);
+  return parseChaifenYaml(content);
+};
+
+export const loadPlusChaifenDictionary = async (
+  signal?: AbortSignal
+): Promise<ChaifenDictionary> => {
+  const content = await fetchTextResource(plusChaifenDictionaryUrl, signal);
   return parseChaifenYaml(content);
 };
 

@@ -1,5 +1,6 @@
 import type { PracticeSchemeKey } from "@/lib/practice/rootPractice";
 import {
+  loadPlusChaifenDictionary,
   loadPujiChaifenDictionary,
   loadSplitAuxEntries,
   pickChaifenEntryByCode,
@@ -17,6 +18,7 @@ type SplitPracticeCache = Partial<Record<PracticeSchemeKey, SplitPracticeQuestio
 
 let splitPracticeCache: SplitPracticeCache = {};
 let pujiChaifenCache: ChaifenDictionary | null = null;
+let plusChaifenCache: ChaifenDictionary | null = null;
 
 const ensurePujiChaifenDictionary = async (signal?: AbortSignal) => {
   if (pujiChaifenCache) {
@@ -27,24 +29,33 @@ const ensurePujiChaifenDictionary = async (signal?: AbortSignal) => {
   return dictionary;
 };
 
+const ensurePlusChaifenDictionary = async (signal?: AbortSignal) => {
+  if (plusChaifenCache) {
+    return plusChaifenCache;
+  }
+  const dictionary = await loadPlusChaifenDictionary(signal);
+  plusChaifenCache = dictionary;
+  return dictionary;
+};
+
 const buildSplitPracticeQuestions = async (
   scheme: PracticeSchemeKey,
   signal?: AbortSignal
 ): Promise<SplitPracticeQuestion[]> => {
-  const [auxEntries, pujiDictionary] = await Promise.all([
+  const [auxEntries, dictionary] = await Promise.all([
     loadSplitAuxEntries(scheme, signal),
-    ensurePujiChaifenDictionary(signal),
+    scheme === "basic" ? ensurePujiChaifenDictionary(signal) : ensurePlusChaifenDictionary(signal),
   ]);
 
   return auxEntries.map((entry, index) => {
-    const chaifenEntries = pujiDictionary[entry.word] ?? [];
+    const chaifenEntries = dictionary[entry.word] ?? [];
     const matched = pickChaifenEntryByCode(chaifenEntries, entry.code);
 
     return {
       id: `${scheme}-${index}-${entry.word}-${entry.code}`,
       word: entry.word,
       code: entry.code,
-      radicals: scheme === "basic" ? (matched?.radicals ?? null) : null,
+      radicals: matched?.radicals ?? null,
     };
   });
 };
@@ -70,5 +81,6 @@ export const loadSplitPracticeQuestions = async (
 export const clearSplitPracticeCache = () => {
   splitPracticeCache = {};
   pujiChaifenCache = null;
+  plusChaifenCache = null;
 };
 
