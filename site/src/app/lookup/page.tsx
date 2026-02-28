@@ -66,7 +66,7 @@ const LookupResultCard = ({ group }: LookupResultCardProps) => {
           isExpanded={isExpanded}
           onToggle={toggleExpanded}
           label="笔顺"
-          className="opacity-100 transition-opacity duration-200 sm:pointer-events-none sm:opacity-0 sm:group-hover:pointer-events-auto sm:group-hover:opacity-100 sm:group-focus-within:pointer-events-auto sm:group-focus-within:opacity-100"
+          className="pointer-events-auto opacity-100 transition-opacity duration-200 md:pointer-events-none md:opacity-0 md:group-hover:pointer-events-auto md:group-hover:opacity-100 md:group-has-[:hover]:pointer-events-auto md:group-has-[:hover]:opacity-100 md:group-focus-within:pointer-events-auto md:group-focus-within:opacity-100"
         />
       </div>
 
@@ -215,7 +215,7 @@ export default function LookupPage() {
                 );
               })}
             </div>
-            <span className="text-xs text-slate-500">普及版与 Plus 版数据均已接入。</span>
+            <span className="text-xs text-slate-500">点击按钮显示笔顺动图</span>
           </div>
 
           <form className="mt-6 flex flex-col gap-3 sm:flex-row" onSubmit={handleSubmit}>
