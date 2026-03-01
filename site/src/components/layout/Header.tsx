@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import logoImage from "@/logo.jpg";
 
 const navLinks = [
   { label: "教程", href: "/tutorial" },
@@ -69,7 +68,7 @@ export default function Header() {
           aria-label="首右辅助码首页"
         >
           <Image
-            src={logoImage}
+            src="/logo.jpg"
             alt="首右辅助码 Logo"
             width={40}
             height={40}

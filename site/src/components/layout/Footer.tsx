@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
-import logoImage from "@/logo.jpg";
 
 const footerLinks = [
   {
@@ -45,7 +45,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <Image
-                src={logoImage}
+                src="/logo.jpg"
                 alt="首右辅助码 Logo"
                 width={40}
                 height={40}
@@ -70,12 +70,21 @@ export default function Footer() {
                 <ul className="mt-3 space-y-2 text-sm text-slate-600">
                   {group.items.map((item) => (
                     <li key={item.label}>
-                      <a
-                        href={item.href}
-                        className="cursor-pointer transition-colors duration-200 hover:text-[var(--color-primary)]"
-                      >
-                        {item.label}
-                      </a>
+                      {item.href.startsWith("/") ? (
+                        <Link
+                          href={item.href}
+                          className="cursor-pointer transition-colors duration-200 hover:text-[var(--color-primary)]"
+                        >
+                          {item.label}
+                        </Link>
+                      ) : (
+                        <a
+                          href={item.href}
+                          className="cursor-pointer transition-colors duration-200 hover:text-[var(--color-primary)]"
+                        >
+                          {item.label}
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>
