@@ -14,6 +14,7 @@ const navLinks = [
 
 export default function Header() {
   const pathname = usePathname();
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   const [mobileMenuPath, setMobileMenuPath] = useState<string | null>(null);
   const isMobileMenuOpen = mobileMenuPath === pathname;
   const mobileMenuRef = useRef<HTMLDivElement | null>(null);
@@ -68,7 +69,7 @@ export default function Header() {
           aria-label="首右辅助码首页"
         >
           <Image
-            src="/logo.jpg"
+            src={`${basePath}/logo.jpg`}
             alt="首右辅助码 Logo"
             width={40}
             height={40}

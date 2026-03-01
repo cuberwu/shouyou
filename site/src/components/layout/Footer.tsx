@@ -18,7 +18,7 @@ const footerLinks = [
     items: [
       { label: "入门教程", href: "/tutorial" },
       { label: "查形工具", href: "/lookup" },
-      { label: "学习指引", href: "/tutorial#path" },
+      { label: "练习中心", href: "/practice" },
     ],
   },
   {
@@ -33,6 +33,7 @@ const footerLinks = [
 
 export default function Footer() {
   const pathname = usePathname();
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
   if (pathname.startsWith("/tutorial")) {
     return null;
@@ -45,7 +46,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <Image
-                src="/logo.jpg"
+                src={`${basePath}/logo.jpg`}
                 alt="首右辅助码 Logo"
                 width={40}
                 height={40}
