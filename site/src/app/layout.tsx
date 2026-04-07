@@ -3,8 +3,6 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
 export const metadata: Metadata = {
   title: "首右辅助码｜高效中文输入方案",
   description:
@@ -12,11 +10,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com"
   ),
-  icons: {
-    icon: `${basePath}/logo.jpg`,
-    shortcut: `${basePath}/logo.jpg`,
-    apple: `${basePath}/logo.jpg`,
-  },
   openGraph: {
     title: "首右辅助码｜高效中文输入方案",
     description:

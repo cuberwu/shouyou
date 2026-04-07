@@ -30,10 +30,7 @@ export default function RootKeyboardChart({
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [keyboardScale, setKeyboardScale] = useState(1);
-
-  const mappingLookup = new Map(
-    rootPracticeSchemes[scheme].mappings.map((item) => [item.key, item])
-  );
+  const mappingLookup = new Map(rootPracticeSchemes[scheme].mappings.map((item) => [item.key, item]));
 
   useEffect(() => {
     const container = containerRef.current;
@@ -64,7 +61,7 @@ export default function RootKeyboardChart({
   }, []);
 
   return (
-    <section className="rounded-3xl border border-white/60 bg-white/85 p-6 shadow-[var(--shadow-sm)]">
+    <section className="site-panel p-6">
       <div className="flex items-center justify-between gap-3">
         <h2 className="text-lg font-semibold text-slate-900">字根图</h2>
         <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">

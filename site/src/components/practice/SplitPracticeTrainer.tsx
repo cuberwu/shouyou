@@ -13,6 +13,7 @@ import {
   type SplitPracticeQuestion,
 } from "@/lib/practice/splitPractice";
 import {
+  practiceSchemeOrder,
   rootPracticeSchemes,
   type PracticeSchemeKey,
 } from "@/lib/practice/rootPractice";
@@ -27,7 +28,6 @@ const shuffle = <T,>(source: T[]) => {
 };
 
 const splitPracticeStorageKey = "shouyou.practice.split.v1";
-const schemeList: PracticeSchemeKey[] = ["basic", "plus"];
 
 export type SplitPracticeTopInfo = {
   progress: string;
@@ -195,16 +195,15 @@ export default function SplitPracticeTrainer({ onTopInfoChange }: SplitPracticeT
 
   useEffect(() => {
     let isActive = true;
-    const controller = new AbortController();
 
-    const bootstrap = async () => {
+    async function bootstrap() {
       setIsReady(false);
       setLoadError(null);
 
       try {
         const [basicQuestions, plusQuestions] = await Promise.all([
-          loadSplitPracticeQuestions("basic", controller.signal),
-          loadSplitPracticeQuestions("plus", controller.signal),
+          loadSplitPracticeQuestions("basic"),
+          loadSplitPracticeQuestions("plus"),
         ]);
 
         if (!isActive) {
@@ -245,13 +244,12 @@ export default function SplitPracticeTrainer({ onTopInfoChange }: SplitPracticeT
           setIsReady(true);
         }
       }
-    };
+    }
 
     bootstrap();
 
     return () => {
       isActive = false;
-      controller.abort();
     };
   }, []);
 
@@ -466,7 +464,7 @@ export default function SplitPracticeTrainer({ onTopInfoChange }: SplitPracticeT
         <div className="flex flex-wrap items-center justify-between gap-3">
           <h2 className="text-xl font-semibold text-slate-900">拆分练习</h2>
           <div className="flex flex-wrap items-center gap-2" role="group" aria-label="练习版本">
-            {schemeList.map((scheme) => {
+            {practiceSchemeOrder.map((scheme) => {
               const option = rootPracticeSchemes[scheme];
               const isActive = activeScheme === scheme;
               return (

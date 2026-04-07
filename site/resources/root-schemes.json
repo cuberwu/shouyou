@@ -1,0 +1,417 @@
+{
+  "schemeOrder": [
+    "basic",
+    "plus"
+  ],
+  "keyboardRows": [
+    [
+      "Q",
+      "W",
+      "E",
+      "R",
+      "T",
+      "Y",
+      "U",
+      "I",
+      "O",
+      "P"
+    ],
+    [
+      "A",
+      "S",
+      "D",
+      "F",
+      "G",
+      "H",
+      "J",
+      "K",
+      "L"
+    ],
+    [
+      "Z",
+      "X",
+      "C",
+      "V",
+      "B",
+      "N",
+      "M"
+    ]
+  ],
+  "schemes": {
+    "basic": {
+      "key": "basic",
+      "label": "普及版",
+      "accent": "var(--color-primary)",
+      "description": "核心字根，适合初学者建立键位记忆。",
+      "mappings": [
+        {
+          "key": "Q",
+          "radicals": [
+            "火"
+          ]
+        },
+        {
+          "key": "W",
+          "radicals": [
+            "王"
+          ]
+        },
+        {
+          "key": "E",
+          "radicals": [
+            "禾"
+          ]
+        },
+        {
+          "key": "R",
+          "radicals": [
+            "亻"
+          ]
+        },
+        {
+          "key": "T",
+          "radicals": [
+            "土"
+          ]
+        },
+        {
+          "key": "Y",
+          "radicals": [
+            "月"
+          ]
+        },
+        {
+          "key": "U",
+          "radicals": [
+            "氵",
+            "水"
+          ]
+        },
+        {
+          "key": "I",
+          "radicals": [
+            "纟"
+          ]
+        },
+        {
+          "key": "O",
+          "radicals": [
+            "虫"
+          ]
+        },
+        {
+          "key": "P",
+          "radicals": [
+            "撇"
+          ]
+        },
+        {
+          "key": "A",
+          "radicals": [
+            "讠",
+            "言"
+          ]
+        },
+        {
+          "key": "S",
+          "radicals": [
+            "竖"
+          ]
+        },
+        {
+          "key": "D",
+          "radicals": [
+            "点"
+          ]
+        },
+        {
+          "key": "F",
+          "radicals": [
+            "扌",
+            "手"
+          ]
+        },
+        {
+          "key": "G",
+          "radicals": [
+            "竹",
+            "辶"
+          ]
+        },
+        {
+          "key": "H",
+          "radicals": [
+            "横"
+          ]
+        },
+        {
+          "key": "J",
+          "radicals": [
+            "钅",
+            "金"
+          ]
+        },
+        {
+          "key": "K",
+          "radicals": [
+            "口"
+          ]
+        },
+        {
+          "key": "L",
+          "radicals": [
+            "日"
+          ]
+        },
+        {
+          "key": "Z",
+          "radicals": [
+            "⻊",
+            "足"
+          ]
+        },
+        {
+          "key": "X",
+          "radicals": [
+            "忄",
+            "心"
+          ]
+        },
+        {
+          "key": "C",
+          "radicals": [
+            "艹"
+          ]
+        },
+        {
+          "key": "V",
+          "radicals": [
+            "折"
+          ]
+        },
+        {
+          "key": "B",
+          "radicals": [
+            "宀"
+          ]
+        },
+        {
+          "key": "N",
+          "radicals": [
+            "女"
+          ]
+        },
+        {
+          "key": "M",
+          "radicals": [
+            "木"
+          ]
+        }
+      ]
+    },
+    "plus": {
+      "key": "plus",
+      "label": "Plus 版",
+      "accent": "var(--color-plus)",
+      "description": "字根更完整，适合进阶强化练习。",
+      "mappings": [
+        {
+          "key": "Q",
+          "radicals": [
+            "龶",
+            "犭",
+            "火"
+          ]
+        },
+        {
+          "key": "W",
+          "radicals": [
+            "王",
+            "亠",
+            "攵"
+          ]
+        },
+        {
+          "key": "E",
+          "radicals": [
+            "禾",
+            "阝"
+          ]
+        },
+        {
+          "key": "R",
+          "radicals": [
+            "亻",
+            "彳"
+          ]
+        },
+        {
+          "key": "T",
+          "radicals": [
+            "土",
+            "田"
+          ]
+        },
+        {
+          "key": "Y",
+          "radicals": [
+            "月",
+            "又",
+            "雨"
+          ]
+        },
+        {
+          "key": "U",
+          "radicals": [
+            "氵"
+          ]
+        },
+        {
+          "key": "I",
+          "radicals": [
+            "纟",
+            "厶"
+          ]
+        },
+        {
+          "key": "O",
+          "radicals": [
+            "虫",
+            "刂"
+          ]
+        },
+        {
+          "key": "P",
+          "radicals": [
+            "撇"
+          ]
+        },
+        {
+          "key": "A",
+          "radicals": [
+            "讠"
+          ]
+        },
+        {
+          "key": "S",
+          "radicals": [
+            "竖",
+            "西",
+            "饣",
+            "尸"
+          ]
+        },
+        {
+          "key": "D",
+          "radicals": [
+            "点"
+          ]
+        },
+        {
+          "key": "F",
+          "radicals": [
+            "扌",
+            "十"
+          ]
+        },
+        {
+          "key": "G",
+          "radicals": [
+            "竹",
+            "弓",
+            "山",
+            "⺈"
+          ]
+        },
+        {
+          "key": "H",
+          "radicals": [
+            "横"
+          ]
+        },
+        {
+          "key": "J",
+          "radicals": [
+            "钅",
+            "几",
+            "巾",
+            "米"
+          ]
+        },
+        {
+          "key": "K",
+          "radicals": [
+            "口"
+          ]
+        },
+        {
+          "key": "L",
+          "radicals": [
+            "日",
+            "力",
+            "大",
+            "目"
+          ]
+        },
+        {
+          "key": "Z",
+          "radicals": [
+            "⻊",
+            "子",
+            "疒",
+            "辶"
+          ]
+        },
+        {
+          "key": "X",
+          "radicals": [
+            "忄",
+            "小",
+            "彐",
+            "广"
+          ]
+        },
+        {
+          "key": "C",
+          "radicals": [
+            "艹",
+            "车",
+            "乂",
+            "寸"
+          ]
+        },
+        {
+          "key": "V",
+          "radicals": [
+            "折",
+            "舟"
+          ]
+        },
+        {
+          "key": "B",
+          "radicals": [
+            "宀",
+            "贝",
+            "勹",
+            "八",
+            "石"
+          ]
+        },
+        {
+          "key": "N",
+          "radicals": [
+            "女",
+            "鸟"
+          ]
+        },
+        {
+          "key": "M",
+          "radicals": [
+            "木",
+            "门"
+          ]
+        }
+      ]
+    }
+  }
+}

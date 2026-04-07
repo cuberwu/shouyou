@@ -3,12 +3,14 @@
 
 @layer base {
   :root {
-    --color-primary: #0d9488;
+    --color-primary: #0f766e;
     --color-secondary: #14b8a6;
     --color-cta: #f97316;
-    --color-background: #f0fdfa;
+    --color-background: #f4fbfb;
     --color-text: #134e4a;
-    --color-plus: #7c3aed;
+    --color-plus: #4f46e5;
+    --surface-base: rgba(255, 255, 255, 0.78);
+    --surface-border: rgba(148, 163, 184, 0.18);
 
     --color-dark-bg: #0f172a;
     --color-dark-surface: #1e293b;
@@ -33,7 +35,10 @@
   body {
     min-height: 100vh;
     font-family: "Noto Sans SC", system-ui, -apple-system, "Segoe UI", sans-serif;
-    background: var(--color-background);
+    background:
+      radial-gradient(circle at top left, rgba(20, 184, 166, 0.16), transparent 32%),
+      radial-gradient(circle at top right, rgba(79, 70, 229, 0.08), transparent 28%),
+      linear-gradient(180deg, #fbffff 0%, var(--color-background) 42%, #eef8f7 100%);
     color: var(--color-text);
     line-height: 1.6;
     text-rendering: optimizeLegibility;
@@ -47,6 +52,26 @@
   .font-mono {
     font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco,
       Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .page-shell {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    max-width: 72rem;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem 1.5rem 5rem;
+  }
+
+  .site-panel {
+    border: 1px solid var(--surface-border);
+    border-radius: 1.75rem;
+    background: var(--surface-base);
+    box-shadow:
+      0 24px 60px -32px rgba(15, 23, 42, 0.32),
+      inset 0 1px 0 rgba(255, 255, 255, 0.66);
+    backdrop-filter: blur(18px);
   }
 }
 

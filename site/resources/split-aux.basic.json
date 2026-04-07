@@ -1,0 +1,6002 @@
+[
+  {
+    "word": "的",
+    "code": "pp"
+  },
+  {
+    "word": "一",
+    "code": "hq"
+  },
+  {
+    "word": "是",
+    "code": "ld"
+  },
+  {
+    "word": "了",
+    "code": "vs"
+  },
+  {
+    "word": "不",
+    "code": "hd"
+  },
+  {
+    "word": "在",
+    "code": "ht"
+  },
+  {
+    "word": "有",
+    "code": "hy"
+  },
+  {
+    "word": "个",
+    "code": "rs"
+  },
+  {
+    "word": "人",
+    "code": "rd"
+  },
+  {
+    "word": "这",
+    "code": "dg"
+  },
+  {
+    "word": "上",
+    "code": "sh"
+  },
+  {
+    "word": "中",
+    "code": "ks"
+  },
+  {
+    "word": "大",
+    "code": "hd"
+  },
+  {
+    "word": "为",
+    "code": "dd"
+  },
+  {
+    "word": "来",
+    "code": "hm"
+  },
+  {
+    "word": "我",
+    "code": "pd"
+  },
+  {
+    "word": "到",
+    "code": "hs"
+  },
+  {
+    "word": "出",
+    "code": "vs"
+  },
+  {
+    "word": "要",
+    "code": "hn"
+  },
+  {
+    "word": "以",
+    "code": "vr"
+  },
+  {
+    "word": "时",
+    "code": "lh"
+  },
+  {
+    "word": "和",
+    "code": "ek"
+  },
+  {
+    "word": "地",
+    "code": "tv"
+  },
+  {
+    "word": "们",
+    "code": "rd"
+  },
+  {
+    "word": "得",
+    "code": "pl"
+  },
+  {
+    "word": "可",
+    "code": "hs"
+  },
+  {
+    "word": "下",
+    "code": "hd"
+  },
+  {
+    "word": "对",
+    "code": "vh"
+  },
+  {
+    "word": "生",
+    "code": "ph"
+  },
+  {
+    "word": "也",
+    "code": "vv"
+  },
+  {
+    "word": "子",
+    "code": "vh"
+  },
+  {
+    "word": "就",
+    "code": "dh"
+  },
+  {
+    "word": "过",
+    "code": "hg"
+  },
+  {
+    "word": "能",
+    "code": "vp"
+  },
+  {
+    "word": "他",
+    "code": "rv"
+  },
+  {
+    "word": "会",
+    "code": "rd"
+  },
+  {
+    "word": "多",
+    "code": "pd"
+  },
+  {
+    "word": "发",
+    "code": "vd"
+  },
+  {
+    "word": "说",
+    "code": "ad"
+  },
+  {
+    "word": "而",
+    "code": "hs"
+  },
+  {
+    "word": "于",
+    "code": "hs"
+  },
+  {
+    "word": "自",
+    "code": "ph"
+  },
+  {
+    "word": "之",
+    "code": "dd"
+  },
+  {
+    "word": "用",
+    "code": "ps"
+  },
+  {
+    "word": "年",
+    "code": "ps"
+  },
+  {
+    "word": "行",
+    "code": "ph"
+  },
+  {
+    "word": "家",
+    "code": "bd"
+  },
+  {
+    "word": "方",
+    "code": "dp"
+  },
+  {
+    "word": "后",
+    "code": "pk"
+  },
+  {
+    "word": "作",
+    "code": "rp"
+  },
+  {
+    "word": "成",
+    "code": "hd"
+  },
+  {
+    "word": "开",
+    "code": "hc"
+  },
+  {
+    "word": "面",
+    "code": "hh"
+  },
+  {
+    "word": "事",
+    "code": "hs"
+  },
+  {
+    "word": "好",
+    "code": "nv"
+  },
+  {
+    "word": "小",
+    "code": "sd"
+  },
+  {
+    "word": "心",
+    "code": "xd"
+  },
+  {
+    "word": "前",
+    "code": "ds"
+  },
+  {
+    "word": "所",
+    "code": "pp"
+  },
+  {
+    "word": "道",
+    "code": "dg"
+  },
+  {
+    "word": "法",
+    "code": "ut"
+  },
+  {
+    "word": "如",
+    "code": "nk"
+  },
+  {
+    "word": "进",
+    "code": "hg"
+  },
+  {
+    "word": "着",
+    "code": "dh"
+  },
+  {
+    "word": "同",
+    "code": "sk"
+  },
+  {
+    "word": "经",
+    "code": "iv"
+  },
+  {
+    "word": "分",
+    "code": "pp"
+  },
+  {
+    "word": "定",
+    "code": "bd"
+  },
+  {
+    "word": "都",
+    "code": "tv"
+  },
+  {
+    "word": "然",
+    "code": "pq"
+  },
+  {
+    "word": "与",
+    "code": "hh"
+  },
+  {
+    "word": "本",
+    "code": "mh"
+  },
+  {
+    "word": "还",
+    "code": "hg"
+  },
+  {
+    "word": "其",
+    "code": "cd"
+  },
+  {
+    "word": "当",
+    "code": "sh"
+  },
+  {
+    "word": "起",
+    "code": "tv"
+  },
+  {
+    "word": "动",
+    "code": "hv"
+  },
+  {
+    "word": "已",
+    "code": "vv"
+  },
+  {
+    "word": "两",
+    "code": "hr"
+  },
+  {
+    "word": "点",
+    "code": "sq"
+  },
+  {
+    "word": "从",
+    "code": "rr"
+  },
+  {
+    "word": "问",
+    "code": "dk"
+  },
+  {
+    "word": "里",
+    "code": "lt"
+  },
+  {
+    "word": "主",
+    "code": "dw"
+  },
+  {
+    "word": "实",
+    "code": "bd"
+  },
+  {
+    "word": "天",
+    "code": "hd"
+  },
+  {
+    "word": "高",
+    "code": "dk"
+  },
+  {
+    "word": "去",
+    "code": "td"
+  },
+  {
+    "word": "现",
+    "code": "ws"
+  },
+  {
+    "word": "长",
+    "code": "pd"
+  },
+  {
+    "word": "此",
+    "code": "sp"
+  },
+  {
+    "word": "三",
+    "code": "hh"
+  },
+  {
+    "word": "将",
+    "code": "dp"
+  },
+  {
+    "word": "无",
+    "code": "hv"
+  },
+  {
+    "word": "国",
+    "code": "sd"
+  },
+  {
+    "word": "全",
+    "code": "rw"
+  },
+  {
+    "word": "文",
+    "code": "dd"
+  },
+  {
+    "word": "理",
+    "code": "wl"
+  },
+  {
+    "word": "明",
+    "code": "ly"
+  },
+  {
+    "word": "日",
+    "code": "ll"
+  },
+  {
+    "word": "些",
+    "code": "sh"
+  },
+  {
+    "word": "看",
+    "code": "ph"
+  },
+  {
+    "word": "只",
+    "code": "kd"
+  },
+  {
+    "word": "公",
+    "code": "pd"
+  },
+  {
+    "word": "等",
+    "code": "gd"
+  },
+  {
+    "word": "十",
+    "code": "hs"
+  },
+  {
+    "word": "意",
+    "code": "dx"
+  },
+  {
+    "word": "正",
+    "code": "hh"
+  },
+  {
+    "word": "外",
+    "code": "ps"
+  },
+  {
+    "word": "想",
+    "code": "mx"
+  },
+  {
+    "word": "间",
+    "code": "dl"
+  },
+  {
+    "word": "把",
+    "code": "fv"
+  },
+  {
+    "word": "情",
+    "code": "xh"
+  },
+  {
+    "word": "者",
+    "code": "tl"
+  },
+  {
+    "word": "没",
+    "code": "up"
+  },
+  {
+    "word": "重",
+    "code": "pt"
+  },
+  {
+    "word": "相",
+    "code": "ms"
+  },
+  {
+    "word": "那",
+    "code": "vv"
+  },
+  {
+    "word": "向",
+    "code": "pk"
+  },
+  {
+    "word": "知",
+    "code": "pk"
+  },
+  {
+    "word": "因",
+    "code": "sd"
+  },
+  {
+    "word": "样",
+    "code": "md"
+  },
+  {
+    "word": "学",
+    "code": "dh"
+  },
+  {
+    "word": "应",
+    "code": "dh"
+  },
+  {
+    "word": "又",
+    "code": "vd"
+  },
+  {
+    "word": "手",
+    "code": "fs"
+  },
+  {
+    "word": "但",
+    "code": "rl"
+  },
+  {
+    "word": "信",
+    "code": "ra"
+  },
+  {
+    "word": "关",
+    "code": "dd"
+  },
+  {
+    "word": "使",
+    "code": "rh"
+  },
+  {
+    "word": "种",
+    "code": "ek"
+  },
+  {
+    "word": "见",
+    "code": "sv"
+  },
+  {
+    "word": "力",
+    "code": "vp"
+  },
+  {
+    "word": "名",
+    "code": "pk"
+  },
+  {
+    "word": "二",
+    "code": "hh"
+  },
+  {
+    "word": "处",
+    "code": "pd"
+  },
+  {
+    "word": "门",
+    "code": "dv"
+  },
+  {
+    "word": "并",
+    "code": "dc"
+  },
+  {
+    "word": "口",
+    "code": "kk"
+  },
+  {
+    "word": "么",
+    "code": "pd"
+  },
+  {
+    "word": "先",
+    "code": "pv"
+  },
+  {
+    "word": "位",
+    "code": "rd"
+  },
+  {
+    "word": "头",
+    "code": "dd"
+  },
+  {
+    "word": "回",
+    "code": "sk"
+  },
+  {
+    "word": "话",
+    "code": "ap"
+  },
+  {
+    "word": "很",
+    "code": "pv"
+  },
+  {
+    "word": "再",
+    "code": "hh"
+  },
+  {
+    "word": "由",
+    "code": "sh"
+  },
+  {
+    "word": "身",
+    "code": "pp"
+  },
+  {
+    "word": "入",
+    "code": "pd"
+  },
+  {
+    "word": "内",
+    "code": "sd"
+  },
+  {
+    "word": "第",
+    "code": "gp"
+  },
+  {
+    "word": "平",
+    "code": "hs"
+  },
+  {
+    "word": "被",
+    "code": "dv"
+  },
+  {
+    "word": "给",
+    "code": "ir"
+  },
+  {
+    "word": "次",
+    "code": "dp"
+  },
+  {
+    "word": "别",
+    "code": "ks"
+  },
+  {
+    "word": "几",
+    "code": "pv"
+  },
+  {
+    "word": "月",
+    "code": "yy"
+  },
+  {
+    "word": "真",
+    "code": "hd"
+  },
+  {
+    "word": "立",
+    "code": "dh"
+  },
+  {
+    "word": "新",
+    "code": "dp"
+  },
+  {
+    "word": "通",
+    "code": "vg"
+  },
+  {
+    "word": "少",
+    "code": "sp"
+  },
+  {
+    "word": "机",
+    "code": "mp"
+  },
+  {
+    "word": "打",
+    "code": "fh"
+  },
+  {
+    "word": "水",
+    "code": "ud"
+  },
+  {
+    "word": "果",
+    "code": "lm"
+  },
+  {
+    "word": "最",
+    "code": "ld"
+  },
+  {
+    "word": "部",
+    "code": "dv"
+  },
+  {
+    "word": "何",
+    "code": "rh"
+  },
+  {
+    "word": "安",
+    "code": "bn"
+  },
+  {
+    "word": "接",
+    "code": "fd"
+  },
+  {
+    "word": "报",
+    "code": "fv"
+  },
+  {
+    "word": "声",
+    "code": "tp"
+  },
+  {
+    "word": "才",
+    "code": "hp"
+  },
+  {
+    "word": "体",
+    "code": "rm"
+  },
+  {
+    "word": "今",
+    "code": "rv"
+  },
+  {
+    "word": "合",
+    "code": "rk"
+  },
+  {
+    "word": "性",
+    "code": "xp"
+  },
+  {
+    "word": "西",
+    "code": "hh"
+  },
+  {
+    "word": "你",
+    "code": "rp"
+  },
+  {
+    "word": "放",
+    "code": "dp"
+  },
+  {
+    "word": "表",
+    "code": "hd"
+  },
+  {
+    "word": "目",
+    "code": "sh"
+  },
+  {
+    "word": "加",
+    "code": "vk"
+  },
+  {
+    "word": "常",
+    "code": "ss"
+  },
+  {
+    "word": "做",
+    "code": "rh"
+  },
+  {
+    "word": "己",
+    "code": "vv"
+  },
+  {
+    "word": "老",
+    "code": "tv"
+  },
+  {
+    "word": "四",
+    "code": "sv"
+  },
+  {
+    "word": "件",
+    "code": "rp"
+  },
+  {
+    "word": "解",
+    "code": "pv"
+  },
+  {
+    "word": "路",
+    "code": "zp"
+  },
+  {
+    "word": "更",
+    "code": "hd"
+  },
+  {
+    "word": "走",
+    "code": "td"
+  },
+  {
+    "word": "比",
+    "code": "hp"
+  },
+  {
+    "word": "总",
+    "code": "dx"
+  },
+  {
+    "word": "金",
+    "code": "jh"
+  },
+  {
+    "word": "管",
+    "code": "gh"
+  },
+  {
+    "word": "光",
+    "code": "sv"
+  },
+  {
+    "word": "工",
+    "code": "hh"
+  },
+  {
+    "word": "结",
+    "code": "it"
+  },
+  {
+    "word": "提",
+    "code": "fl"
+  },
+  {
+    "word": "任",
+    "code": "rp"
+  },
+  {
+    "word": "东",
+    "code": "hd"
+  },
+  {
+    "word": "原",
+    "code": "hd"
+  },
+  {
+    "word": "便",
+    "code": "rh"
+  },
+  {
+    "word": "美",
+    "code": "dd"
+  },
+  {
+    "word": "及",
+    "code": "pd"
+  },
+  {
+    "word": "教",
+    "code": "tp"
+  },
+  {
+    "word": "难",
+    "code": "vr"
+  },
+  {
+    "word": "世",
+    "code": "cv"
+  },
+  {
+    "word": "至",
+    "code": "ht"
+  },
+  {
+    "word": "气",
+    "code": "pv"
+  },
+  {
+    "word": "神",
+    "code": "dl"
+  },
+  {
+    "word": "山",
+    "code": "ss"
+  },
+  {
+    "word": "数",
+    "code": "dp"
+  },
+  {
+    "word": "利",
+    "code": "es"
+  },
+  {
+    "word": "书",
+    "code": "vd"
+  },
+  {
+    "word": "代",
+    "code": "rh"
+  },
+  {
+    "word": "直",
+    "code": "hh"
+  },
+  {
+    "word": "色",
+    "code": "pv"
+  },
+  {
+    "word": "场",
+    "code": "tv"
+  },
+  {
+    "word": "变",
+    "code": "dd"
+  },
+  {
+    "word": "记",
+    "code": "av"
+  },
+  {
+    "word": "张",
+    "code": "vp"
+  },
+  {
+    "word": "必",
+    "code": "xp"
+  },
+  {
+    "word": "受",
+    "code": "pd"
+  },
+  {
+    "word": "交",
+    "code": "dd"
+  },
+  {
+    "word": "非",
+    "code": "ss"
+  },
+  {
+    "word": "服",
+    "code": "yv"
+  },
+  {
+    "word": "化",
+    "code": "rp"
+  },
+  {
+    "word": "求",
+    "code": "hd"
+  },
+  {
+    "word": "风",
+    "code": "pd"
+  },
+  {
+    "word": "度",
+    "code": "dd"
+  },
+  {
+    "word": "太",
+    "code": "hd"
+  },
+  {
+    "word": "万",
+    "code": "hp"
+  },
+  {
+    "word": "各",
+    "code": "pk"
+  },
+  {
+    "word": "算",
+    "code": "gc"
+  },
+  {
+    "word": "边",
+    "code": "vg"
+  },
+  {
+    "word": "王",
+    "code": "ww"
+  },
+  {
+    "word": "什",
+    "code": "rh"
+  },
+  {
+    "word": "快",
+    "code": "xv"
+  },
+  {
+    "word": "许",
+    "code": "ap"
+  },
+  {
+    "word": "连",
+    "code": "hg"
+  },
+  {
+    "word": "五",
+    "code": "hh"
+  },
+  {
+    "word": "活",
+    "code": "up"
+  },
+  {
+    "word": "思",
+    "code": "sx"
+  },
+  {
+    "word": "该",
+    "code": "ad"
+  },
+  {
+    "word": "步",
+    "code": "sp"
+  },
+  {
+    "word": "海",
+    "code": "up"
+  },
+  {
+    "word": "指",
+    "code": "fp"
+  },
+  {
+    "word": "物",
+    "code": "pp"
+  },
+  {
+    "word": "则",
+    "code": "ss"
+  },
+  {
+    "word": "女",
+    "code": "nn"
+  },
+  {
+    "word": "或",
+    "code": "hd"
+  },
+  {
+    "word": "完",
+    "code": "bv"
+  },
+  {
+    "word": "马",
+    "code": "vh"
+  },
+  {
+    "word": "强",
+    "code": "vk"
+  },
+  {
+    "word": "言",
+    "code": "ak"
+  },
+  {
+    "word": "条",
+    "code": "pm"
+  },
+  {
+    "word": "特",
+    "code": "pt"
+  },
+  {
+    "word": "命",
+    "code": "rs"
+  },
+  {
+    "word": "感",
+    "code": "hx"
+  },
+  {
+    "word": "清",
+    "code": "uh"
+  },
+  {
+    "word": "带",
+    "code": "hs"
+  },
+  {
+    "word": "认",
+    "code": "ar"
+  },
+  {
+    "word": "保",
+    "code": "rk"
+  },
+  {
+    "word": "望",
+    "code": "dw"
+  },
+  {
+    "word": "转",
+    "code": "hh"
+  },
+  {
+    "word": "传",
+    "code": "rh"
+  },
+  {
+    "word": "儿",
+    "code": "pv"
+  },
+  {
+    "word": "制",
+    "code": "ps"
+  },
+  {
+    "word": "干",
+    "code": "hs"
+  },
+  {
+    "word": "计",
+    "code": "ah"
+  },
+  {
+    "word": "民",
+    "code": "vv"
+  },
+  {
+    "word": "白",
+    "code": "pl"
+  },
+  {
+    "word": "住",
+    "code": "rd"
+  },
+  {
+    "word": "字",
+    "code": "bh"
+  },
+  {
+    "word": "它",
+    "code": "bv"
+  },
+  {
+    "word": "义",
+    "code": "dd"
+  },
+  {
+    "word": "车",
+    "code": "hs"
+  },
+  {
+    "word": "像",
+    "code": "rp"
+  },
+  {
+    "word": "反",
+    "code": "pd"
+  },
+  {
+    "word": "象",
+    "code": "pd"
+  },
+  {
+    "word": "题",
+    "code": "lr"
+  },
+  {
+    "word": "却",
+    "code": "tv"
+  },
+  {
+    "word": "流",
+    "code": "ud"
+  },
+  {
+    "word": "且",
+    "code": "sh"
+  },
+  {
+    "word": "即",
+    "code": "vv"
+  },
+  {
+    "word": "深",
+    "code": "ud"
+  },
+  {
+    "word": "近",
+    "code": "pg"
+  },
+  {
+    "word": "形",
+    "code": "hp"
+  },
+  {
+    "word": "取",
+    "code": "hv"
+  },
+  {
+    "word": "往",
+    "code": "pd"
+  },
+  {
+    "word": "系",
+    "code": "pi"
+  },
+  {
+    "word": "量",
+    "code": "lt"
+  },
+  {
+    "word": "论",
+    "code": "ar"
+  },
+  {
+    "word": "告",
+    "code": "pk"
+  },
+  {
+    "word": "息",
+    "code": "px"
+  },
+  {
+    "word": "让",
+    "code": "as"
+  },
+  {
+    "word": "决",
+    "code": "dv"
+  },
+  {
+    "word": "未",
+    "code": "hm"
+  },
+  {
+    "word": "花",
+    "code": "cv"
+  },
+  {
+    "word": "收",
+    "code": "vp"
+  },
+  {
+    "word": "满",
+    "code": "uc"
+  },
+  {
+    "word": "每",
+    "code": "pd"
+  },
+  {
+    "word": "华",
+    "code": "rs"
+  },
+  {
+    "word": "业",
+    "code": "sh"
+  },
+  {
+    "word": "南",
+    "code": "hs"
+  },
+  {
+    "word": "觉",
+    "code": "dv"
+  },
+  {
+    "word": "电",
+    "code": "lv"
+  },
+  {
+    "word": "空",
+    "code": "bh"
+  },
+  {
+    "word": "眼",
+    "code": "sv"
+  },
+  {
+    "word": "听",
+    "code": "kp"
+  },
+  {
+    "word": "远",
+    "code": "hg"
+  },
+  {
+    "word": "师",
+    "code": "sh"
+  },
+  {
+    "word": "元",
+    "code": "hv"
+  },
+  {
+    "word": "请",
+    "code": "ah"
+  },
+  {
+    "word": "容",
+    "code": "bk"
+  },
+  {
+    "word": "她",
+    "code": "nv"
+  },
+  {
+    "word": "军",
+    "code": "ds"
+  },
+  {
+    "word": "士",
+    "code": "th"
+  },
+  {
+    "word": "百",
+    "code": "hl"
+  },
+  {
+    "word": "办",
+    "code": "vd"
+  },
+  {
+    "word": "语",
+    "code": "ah"
+  },
+  {
+    "word": "期",
+    "code": "cy"
+  },
+  {
+    "word": "北",
+    "code": "sp"
+  },
+  {
+    "word": "林",
+    "code": "mm"
+  },
+  {
+    "word": "识",
+    "code": "ak"
+  },
+  {
+    "word": "半",
+    "code": "ds"
+  },
+  {
+    "word": "夫",
+    "code": "hd"
+  },
+  {
+    "word": "客",
+    "code": "bk"
+  },
+  {
+    "word": "战",
+    "code": "sh"
+  },
+  {
+    "word": "院",
+    "code": "vb"
+  },
+  {
+    "word": "城",
+    "code": "th"
+  },
+  {
+    "word": "候",
+    "code": "rs"
+  },
+  {
+    "word": "单",
+    "code": "ds"
+  },
+  {
+    "word": "音",
+    "code": "dl"
+  },
+  {
+    "word": "台",
+    "code": "vk"
+  },
+  {
+    "word": "死",
+    "code": "hv"
+  },
+  {
+    "word": "视",
+    "code": "ds"
+  },
+  {
+    "word": "领",
+    "code": "rh"
+  },
+  {
+    "word": "失",
+    "code": "pd"
+  },
+  {
+    "word": "司",
+    "code": "vk"
+  },
+  {
+    "word": "亲",
+    "code": "dm"
+  },
+  {
+    "word": "始",
+    "code": "nv"
+  },
+  {
+    "word": "极",
+    "code": "mp"
+  },
+  {
+    "word": "双",
+    "code": "vv"
+  },
+  {
+    "word": "令",
+    "code": "rd"
+  },
+  {
+    "word": "改",
+    "code": "vp"
+  },
+  {
+    "word": "功",
+    "code": "hv"
+  },
+  {
+    "word": "程",
+    "code": "ek"
+  },
+  {
+    "word": "爱",
+    "code": "pd"
+  },
+  {
+    "word": "德",
+    "code": "ph"
+  },
+  {
+    "word": "复",
+    "code": "pd"
+  },
+  {
+    "word": "切",
+    "code": "hv"
+  },
+  {
+    "word": "随",
+    "code": "vh"
+  },
+  {
+    "word": "李",
+    "code": "mh"
+  },
+  {
+    "word": "员",
+    "code": "kr"
+  },
+  {
+    "word": "离",
+    "code": "dd"
+  },
+  {
+    "word": "轻",
+    "code": "hv"
+  },
+  {
+    "word": "观",
+    "code": "vs"
+  },
+  {
+    "word": "青",
+    "code": "hy"
+  },
+  {
+    "word": "足",
+    "code": "zd"
+  },
+  {
+    "word": "落",
+    "code": "ck"
+  },
+  {
+    "word": "叫",
+    "code": "kv"
+  },
+  {
+    "word": "根",
+    "code": "mv"
+  },
+  {
+    "word": "怎",
+    "code": "px"
+  },
+  {
+    "word": "持",
+    "code": "ft"
+  },
+  {
+    "word": "精",
+    "code": "dh"
+  },
+  {
+    "word": "送",
+    "code": "dg"
+  },
+  {
+    "word": "众",
+    "code": "rr"
+  },
+  {
+    "word": "影",
+    "code": "lp"
+  },
+  {
+    "word": "八",
+    "code": "pd"
+  },
+  {
+    "word": "首",
+    "code": "dh"
+  },
+  {
+    "word": "包",
+    "code": "pv"
+  },
+  {
+    "word": "准",
+    "code": "dr"
+  },
+  {
+    "word": "兴",
+    "code": "dd"
+  },
+  {
+    "word": "红",
+    "code": "ih"
+  },
+  {
+    "word": "达",
+    "code": "hg"
+  },
+  {
+    "word": "早",
+    "code": "ls"
+  },
+  {
+    "word": "尽",
+    "code": "vd"
+  },
+  {
+    "word": "故",
+    "code": "hp"
+  },
+  {
+    "word": "房",
+    "code": "dp"
+  },
+  {
+    "word": "引",
+    "code": "vs"
+  },
+  {
+    "word": "火",
+    "code": "qd"
+  },
+  {
+    "word": "站",
+    "code": "ds"
+  },
+  {
+    "word": "似",
+    "code": "rv"
+  },
+  {
+    "word": "找",
+    "code": "fh"
+  },
+  {
+    "word": "备",
+    "code": "ph"
+  },
+  {
+    "word": "调",
+    "code": "ap"
+  },
+  {
+    "word": "断",
+    "code": "dp"
+  },
+  {
+    "word": "设",
+    "code": "ap"
+  },
+  {
+    "word": "格",
+    "code": "mp"
+  },
+  {
+    "word": "消",
+    "code": "us"
+  },
+  {
+    "word": "拉",
+    "code": "fd"
+  },
+  {
+    "word": "照",
+    "code": "lq"
+  },
+  {
+    "word": "布",
+    "code": "hs"
+  },
+  {
+    "word": "友",
+    "code": "hd"
+  },
+  {
+    "word": "整",
+    "code": "hh"
+  },
+  {
+    "word": "术",
+    "code": "md"
+  },
+  {
+    "word": "石",
+    "code": "hk"
+  },
+  {
+    "word": "展",
+    "code": "vd"
+  },
+  {
+    "word": "紧",
+    "code": "sd"
+  },
+  {
+    "word": "据",
+    "code": "fv"
+  },
+  {
+    "word": "终",
+    "code": "ip"
+  },
+  {
+    "word": "周",
+    "code": "pk"
+  },
+  {
+    "word": "式",
+    "code": "hd"
+  },
+  {
+    "word": "举",
+    "code": "ds"
+  },
+  {
+    "word": "飞",
+    "code": "vd"
+  },
+  {
+    "word": "片",
+    "code": "pv"
+  },
+  {
+    "word": "虽",
+    "code": "ko"
+  },
+  {
+    "word": "易",
+    "code": "lp"
+  },
+  {
+    "word": "运",
+    "code": "hg"
+  },
+  {
+    "word": "笑",
+    "code": "gd"
+  },
+  {
+    "word": "云",
+    "code": "hd"
+  },
+  {
+    "word": "建",
+    "code": "vd"
+  },
+  {
+    "word": "谈",
+    "code": "aq"
+  },
+  {
+    "word": "界",
+    "code": "ss"
+  },
+  {
+    "word": "务",
+    "code": "pp"
+  },
+  {
+    "word": "写",
+    "code": "dh"
+  },
+  {
+    "word": "钱",
+    "code": "jh"
+  },
+  {
+    "word": "商",
+    "code": "dk"
+  },
+  {
+    "word": "乐",
+    "code": "pd"
+  },
+  {
+    "word": "推",
+    "code": "fr"
+  },
+  {
+    "word": "注",
+    "code": "ud"
+  },
+  {
+    "word": "越",
+    "code": "td"
+  },
+  {
+    "word": "千",
+    "code": "ps"
+  },
+  {
+    "word": "微",
+    "code": "ps"
+  },
+  {
+    "word": "若",
+    "code": "ck"
+  },
+  {
+    "word": "约",
+    "code": "ip"
+  },
+  {
+    "word": "英",
+    "code": "cd"
+  },
+  {
+    "word": "集",
+    "code": "rm"
+  },
+  {
+    "word": "示",
+    "code": "hd"
+  },
+  {
+    "word": "呢",
+    "code": "kv"
+  },
+  {
+    "word": "待",
+    "code": "pt"
+  },
+  {
+    "word": "坐",
+    "code": "rt"
+  },
+  {
+    "word": "议",
+    "code": "ad"
+  },
+  {
+    "word": "乎",
+    "code": "ps"
+  },
+  {
+    "word": "留",
+    "code": "ph"
+  },
+  {
+    "word": "称",
+    "code": "ep"
+  },
+  {
+    "word": "品",
+    "code": "kk"
+  },
+  {
+    "word": "志",
+    "code": "tx"
+  },
+  {
+    "word": "黑",
+    "code": "sq"
+  },
+  {
+    "word": "存",
+    "code": "hh"
+  },
+  {
+    "word": "六",
+    "code": "dd"
+  },
+  {
+    "word": "造",
+    "code": "pg"
+  },
+  {
+    "word": "低",
+    "code": "rp"
+  },
+  {
+    "word": "江",
+    "code": "uh"
+  },
+  {
+    "word": "念",
+    "code": "rx"
+  },
+  {
+    "word": "产",
+    "code": "dp"
+  },
+  {
+    "word": "刻",
+    "code": "ds"
+  },
+  {
+    "word": "节",
+    "code": "cs"
+  },
+  {
+    "word": "尔",
+    "code": "pd"
+  },
+  {
+    "word": "吃",
+    "code": "kp"
+  },
+  {
+    "word": "势",
+    "code": "fp"
+  },
+  {
+    "word": "依",
+    "code": "rd"
+  },
+  {
+    "word": "图",
+    "code": "sd"
+  },
+  {
+    "word": "共",
+    "code": "cd"
+  },
+  {
+    "word": "曾",
+    "code": "dl"
+  },
+  {
+    "word": "响",
+    "code": "kp"
+  },
+  {
+    "word": "底",
+    "code": "dd"
+  },
+  {
+    "word": "装",
+    "code": "dd"
+  },
+  {
+    "word": "具",
+    "code": "sd"
+  },
+  {
+    "word": "喜",
+    "code": "tk"
+  },
+  {
+    "word": "严",
+    "code": "hp"
+  },
+  {
+    "word": "九",
+    "code": "pv"
+  },
+  {
+    "word": "况",
+    "code": "dk"
+  },
+  {
+    "word": "跟",
+    "code": "zv"
+  },
+  {
+    "word": "罗",
+    "code": "sd"
+  },
+  {
+    "word": "须",
+    "code": "ph"
+  },
+  {
+    "word": "显",
+    "code": "lh"
+  },
+  {
+    "word": "热",
+    "code": "fq"
+  },
+  {
+    "word": "病",
+    "code": "dd"
+  },
+  {
+    "word": "证",
+    "code": "ah"
+  },
+  {
+    "word": "刚",
+    "code": "ss"
+  },
+  {
+    "word": "治",
+    "code": "uv"
+  },
+  {
+    "word": "绝",
+    "code": "ip"
+  },
+  {
+    "word": "群",
+    "code": "vd"
+  },
+  {
+    "word": "市",
+    "code": "ds"
+  },
+  {
+    "word": "阳",
+    "code": "vl"
+  },
+  {
+    "word": "确",
+    "code": "hp"
+  },
+  {
+    "word": "究",
+    "code": "bv"
+  },
+  {
+    "word": "久",
+    "code": "pd"
+  },
+  {
+    "word": "除",
+    "code": "vr"
+  },
+  {
+    "word": "闻",
+    "code": "dh"
+  },
+  {
+    "word": "答",
+    "code": "gk"
+  },
+  {
+    "word": "段",
+    "code": "pp"
+  },
+  {
+    "word": "官",
+    "code": "bh"
+  },
+  {
+    "word": "政",
+    "code": "hp"
+  },
+  {
+    "word": "类",
+    "code": "dd"
+  },
+  {
+    "word": "黄",
+    "code": "cd"
+  },
+  {
+    "word": "武",
+    "code": "hd"
+  },
+  {
+    "word": "七",
+    "code": "hv"
+  },
+  {
+    "word": "支",
+    "code": "hd"
+  },
+  {
+    "word": "费",
+    "code": "vr"
+  },
+  {
+    "word": "父",
+    "code": "pd"
+  },
+  {
+    "word": "统",
+    "code": "id"
+  },
+  {
+    "word": "府",
+    "code": "dd"
+  },
+  {
+    "word": "查",
+    "code": "mh"
+  },
+  {
+    "word": "般",
+    "code": "pp"
+  },
+  {
+    "word": "斯",
+    "code": "cp"
+  },
+  {
+    "word": "倒",
+    "code": "rh"
+  },
+  {
+    "word": "突",
+    "code": "bd"
+  },
+  {
+    "word": "号",
+    "code": "kv"
+  },
+  {
+    "word": "树",
+    "code": "mv"
+  },
+  {
+    "word": "拿",
+    "code": "rf"
+  },
+  {
+    "word": "克",
+    "code": "hv"
+  },
+  {
+    "word": "初",
+    "code": "dv"
+  },
+  {
+    "word": "广",
+    "code": "dp"
+  },
+  {
+    "word": "奇",
+    "code": "hs"
+  },
+  {
+    "word": "愿",
+    "code": "hx"
+  },
+  {
+    "word": "欢",
+    "code": "vp"
+  },
+  {
+    "word": "希",
+    "code": "ps"
+  },
+  {
+    "word": "母",
+    "code": "vd"
+  },
+  {
+    "word": "香",
+    "code": "el"
+  },
+  {
+    "word": "破",
+    "code": "hv"
+  },
+  {
+    "word": "谁",
+    "code": "ar"
+  },
+  {
+    "word": "致",
+    "code": "hp"
+  },
+  {
+    "word": "线",
+    "code": "ih"
+  },
+  {
+    "word": "急",
+    "code": "px"
+  },
+  {
+    "word": "古",
+    "code": "hk"
+  },
+  {
+    "word": "既",
+    "code": "vh"
+  },
+  {
+    "word": "句",
+    "code": "pk"
+  },
+  {
+    "word": "京",
+    "code": "dd"
+  },
+  {
+    "word": "甚",
+    "code": "cv"
+  },
+  {
+    "word": "仍",
+    "code": "rv"
+  },
+  {
+    "word": "晚",
+    "code": "lp"
+  },
+  {
+    "word": "争",
+    "code": "ps"
+  },
+  {
+    "word": "游",
+    "code": "ud"
+  },
+  {
+    "word": "龙",
+    "code": "hd"
+  },
+  {
+    "word": "余",
+    "code": "rm"
+  },
+  {
+    "word": "护",
+    "code": "fd"
+  },
+  {
+    "word": "另",
+    "code": "kp"
+  },
+  {
+    "word": "器",
+    "code": "kk"
+  },
+  {
+    "word": "细",
+    "code": "is"
+  },
+  {
+    "word": "木",
+    "code": "mm"
+  },
+  {
+    "word": "权",
+    "code": "mv"
+  },
+  {
+    "word": "星",
+    "code": "lh"
+  },
+  {
+    "word": "哪",
+    "code": "kv"
+  },
+  {
+    "word": "苦",
+    "code": "ck"
+  },
+  {
+    "word": "孩",
+    "code": "vd"
+  },
+  {
+    "word": "试",
+    "code": "ah"
+  },
+  {
+    "word": "朝",
+    "code": "hy"
+  },
+  {
+    "word": "阿",
+    "code": "vh"
+  },
+  {
+    "word": "队",
+    "code": "vr"
+  },
+  {
+    "word": "居",
+    "code": "vk"
+  },
+  {
+    "word": "害",
+    "code": "bk"
+  },
+  {
+    "word": "独",
+    "code": "po"
+  },
+  {
+    "word": "讲",
+    "code": "ah"
+  },
+  {
+    "word": "错",
+    "code": "jc"
+  },
+  {
+    "word": "局",
+    "code": "vk"
+  },
+  {
+    "word": "男",
+    "code": "sp"
+  },
+  {
+    "word": "差",
+    "code": "dh"
+  },
+  {
+    "word": "参",
+    "code": "vp"
+  },
+  {
+    "word": "社",
+    "code": "dt"
+  },
+  {
+    "word": "换",
+    "code": "fp"
+  },
+  {
+    "word": "选",
+    "code": "pg"
+  },
+  {
+    "word": "止",
+    "code": "sh"
+  },
+  {
+    "word": "际",
+    "code": "vh"
+  },
+  {
+    "word": "假",
+    "code": "rv"
+  },
+  {
+    "word": "汉",
+    "code": "uv"
+  },
+  {
+    "word": "够",
+    "code": "pp"
+  },
+  {
+    "word": "诉",
+    "code": "ap"
+  },
+  {
+    "word": "资",
+    "code": "dr"
+  },
+  {
+    "word": "密",
+    "code": "bs"
+  },
+  {
+    "word": "案",
+    "code": "bm"
+  },
+  {
+    "word": "史",
+    "code": "kd"
+  },
+  {
+    "word": "较",
+    "code": "hd"
+  },
+  {
+    "word": "环",
+    "code": "wh"
+  },
+  {
+    "word": "投",
+    "code": "fp"
+  },
+  {
+    "word": "静",
+    "code": "hp"
+  },
+  {
+    "word": "宝",
+    "code": "bd"
+  },
+  {
+    "word": "专",
+    "code": "hd"
+  },
+  {
+    "word": "修",
+    "code": "rs"
+  },
+  {
+    "word": "室",
+    "code": "bt"
+  },
+  {
+    "word": "区",
+    "code": "hv"
+  },
+  {
+    "word": "料",
+    "code": "dd"
+  },
+  {
+    "word": "帮",
+    "code": "hs"
+  },
+  {
+    "word": "衣",
+    "code": "dd"
+  },
+  {
+    "word": "竟",
+    "code": "dv"
+  },
+  {
+    "word": "模",
+    "code": "mc"
+  },
+  {
+    "word": "脸",
+    "code": "yr"
+  },
+  {
+    "word": "善",
+    "code": "dk"
+  },
+  {
+    "word": "兵",
+    "code": "pd"
+  },
+  {
+    "word": "考",
+    "code": "tv"
+  },
+  {
+    "word": "规",
+    "code": "hs"
+  },
+  {
+    "word": "联",
+    "code": "hd"
+  },
+  {
+    "word": "团",
+    "code": "kp"
+  },
+  {
+    "word": "冷",
+    "code": "dr"
+  },
+  {
+    "word": "玉",
+    "code": "wd"
+  },
+  {
+    "word": "施",
+    "code": "dp"
+  },
+  {
+    "word": "派",
+    "code": "up"
+  },
+  {
+    "word": "纪",
+    "code": "iv"
+  },
+  {
+    "word": "采",
+    "code": "pm"
+  },
+  {
+    "word": "历",
+    "code": "hp"
+  },
+  {
+    "word": "顾",
+    "code": "hh"
+  },
+  {
+    "word": "春",
+    "code": "hl"
+  },
+  {
+    "word": "责",
+    "code": "hr"
+  },
+  {
+    "word": "夜",
+    "code": "dd"
+  },
+  {
+    "word": "画",
+    "code": "hs"
+  },
+  {
+    "word": "惊",
+    "code": "xd"
+  },
+  {
+    "word": "银",
+    "code": "jv"
+  },
+  {
+    "word": "负",
+    "code": "pr"
+  },
+  {
+    "word": "续",
+    "code": "ih"
+  },
+  {
+    "word": "吗",
+    "code": "kv"
+  },
+  {
+    "word": "简",
+    "code": "gl"
+  },
+  {
+    "word": "章",
+    "code": "ds"
+  },
+  {
+    "word": "左",
+    "code": "hh"
+  },
+  {
+    "word": "块",
+    "code": "tv"
+  },
+  {
+    "word": "索",
+    "code": "hi"
+  },
+  {
+    "word": "酒",
+    "code": "uh"
+  },
+  {
+    "word": "值",
+    "code": "rh"
+  },
+  {
+    "word": "态",
+    "code": "hx"
+  },
+  {
+    "word": "按",
+    "code": "fb"
+  },
+  {
+    "word": "陈",
+    "code": "vh"
+  },
+  {
+    "word": "河",
+    "code": "uh"
+  },
+  {
+    "word": "巴",
+    "code": "vv"
+  },
+  {
+    "word": "冲",
+    "code": "dk"
+  },
+  {
+    "word": "阵",
+    "code": "vh"
+  },
+  {
+    "word": "境",
+    "code": "td"
+  },
+  {
+    "word": "助",
+    "code": "sv"
+  },
+  {
+    "word": "角",
+    "code": "ps"
+  },
+  {
+    "word": "户",
+    "code": "dp"
+  },
+  {
+    "word": "乱",
+    "code": "pv"
+  },
+  {
+    "word": "呼",
+    "code": "kp"
+  },
+  {
+    "word": "灵",
+    "code": "vq"
+  },
+  {
+    "word": "脚",
+    "code": "yt"
+  },
+  {
+    "word": "继",
+    "code": "id"
+  },
+  {
+    "word": "楼",
+    "code": "md"
+  },
+  {
+    "word": "景",
+    "code": "ld"
+  },
+  {
+    "word": "怕",
+    "code": "xp"
+  },
+  {
+    "word": "停",
+    "code": "rd"
+  },
+  {
+    "word": "铁",
+    "code": "jp"
+  },
+  {
+    "word": "异",
+    "code": "vc"
+  },
+  {
+    "word": "谢",
+    "code": "ap"
+  },
+  {
+    "word": "否",
+    "code": "hk"
+  },
+  {
+    "word": "伤",
+    "code": "rp"
+  },
+  {
+    "word": "兰",
+    "code": "dh"
+  },
+  {
+    "word": "置",
+    "code": "sh"
+  },
+  {
+    "word": "医",
+    "code": "hv"
+  },
+  {
+    "word": "良",
+    "code": "dd"
+  },
+  {
+    "word": "承",
+    "code": "vd"
+  },
+  {
+    "word": "福",
+    "code": "dh"
+  },
+  {
+    "word": "科",
+    "code": "ed"
+  },
+  {
+    "word": "属",
+    "code": "vd"
+  },
+  {
+    "word": "围",
+    "code": "ss"
+  },
+  {
+    "word": "需",
+    "code": "hs"
+  },
+  {
+    "word": "退",
+    "code": "vg"
+  },
+  {
+    "word": "基",
+    "code": "ct"
+  },
+  {
+    "word": "右",
+    "code": "hk"
+  },
+  {
+    "word": "速",
+    "code": "hg"
+  },
+  {
+    "word": "适",
+    "code": "pg"
+  },
+  {
+    "word": "药",
+    "code": "cd"
+  },
+  {
+    "word": "怀",
+    "code": "xh"
+  },
+  {
+    "word": "击",
+    "code": "hs"
+  },
+  {
+    "word": "买",
+    "code": "vd"
+  },
+  {
+    "word": "素",
+    "code": "hi"
+  },
+  {
+    "word": "背",
+    "code": "sy"
+  },
+  {
+    "word": "岁",
+    "code": "sd"
+  },
+  {
+    "word": "土",
+    "code": "tt"
+  },
+  {
+    "word": "忙",
+    "code": "xd"
+  },
+  {
+    "word": "充",
+    "code": "dv"
+  },
+  {
+    "word": "排",
+    "code": "fs"
+  },
+  {
+    "word": "价",
+    "code": "rr"
+  },
+  {
+    "word": "质",
+    "code": "pr"
+  },
+  {
+    "word": "遇",
+    "code": "lg"
+  },
+  {
+    "word": "端",
+    "code": "ds"
+  },
+  {
+    "word": "列",
+    "code": "hs"
+  },
+  {
+    "word": "印",
+    "code": "pv"
+  },
+  {
+    "word": "贵",
+    "code": "kr"
+  },
+  {
+    "word": "疑",
+    "code": "pv"
+  },
+  {
+    "word": "露",
+    "code": "hk"
+  },
+  {
+    "word": "哥",
+    "code": "hs"
+  },
+  {
+    "word": "杀",
+    "code": "pm"
+  },
+  {
+    "word": "标",
+    "code": "mh"
+  },
+  {
+    "word": "招",
+    "code": "fv"
+  },
+  {
+    "word": "血",
+    "code": "ph"
+  },
+  {
+    "word": "礼",
+    "code": "dv"
+  },
+  {
+    "word": "弟",
+    "code": "dp"
+  },
+  {
+    "word": "亮",
+    "code": "dv"
+  },
+  {
+    "word": "齐",
+    "code": "ds"
+  },
+  {
+    "word": "穿",
+    "code": "bp"
+  },
+  {
+    "word": "脑",
+    "code": "yd"
+  },
+  {
+    "word": "委",
+    "code": "en"
+  },
+  {
+    "word": "州",
+    "code": "ds"
+  },
+  {
+    "word": "某",
+    "code": "cm"
+  },
+  {
+    "word": "顺",
+    "code": "ph"
+  },
+  {
+    "word": "省",
+    "code": "sh"
+  },
+  {
+    "word": "讨",
+    "code": "ah"
+  },
+  {
+    "word": "尚",
+    "code": "sk"
+  },
+  {
+    "word": "维",
+    "code": "ir"
+  },
+  {
+    "word": "板",
+    "code": "mp"
+  },
+  {
+    "word": "散",
+    "code": "cp"
+  },
+  {
+    "word": "项",
+    "code": "hh"
+  },
+  {
+    "word": "状",
+    "code": "dh"
+  },
+  {
+    "word": "追",
+    "code": "pg"
+  },
+  {
+    "word": "笔",
+    "code": "gv"
+  },
+  {
+    "word": "副",
+    "code": "hs"
+  },
+  {
+    "word": "层",
+    "code": "vd"
+  },
+  {
+    "word": "沙",
+    "code": "us"
+  },
+  {
+    "word": "养",
+    "code": "ds"
+  },
+  {
+    "word": "读",
+    "code": "ah"
+  },
+  {
+    "word": "习",
+    "code": "vh"
+  },
+  {
+    "word": "永",
+    "code": "dd"
+  },
+  {
+    "word": "草",
+    "code": "cs"
+  },
+  {
+    "word": "胡",
+    "code": "hy"
+  },
+  {
+    "word": "济",
+    "code": "ud"
+  },
+  {
+    "word": "执",
+    "code": "fp"
+  },
+  {
+    "word": "察",
+    "code": "bd"
+  },
+  {
+    "word": "归",
+    "code": "sv"
+  },
+  {
+    "word": "富",
+    "code": "bh"
+  },
+  {
+    "word": "座",
+    "code": "dt"
+  },
+  {
+    "word": "雨",
+    "code": "hd"
+  },
+  {
+    "word": "堂",
+    "code": "st"
+  },
+  {
+    "word": "威",
+    "code": "hd"
+  },
+  {
+    "word": "忽",
+    "code": "px"
+  },
+  {
+    "word": "苏",
+    "code": "cd"
+  },
+  {
+    "word": "船",
+    "code": "pp"
+  },
+  {
+    "word": "罪",
+    "code": "sh"
+  },
+  {
+    "word": "敢",
+    "code": "vp"
+  },
+  {
+    "word": "妇",
+    "code": "nv"
+  },
+  {
+    "word": "村",
+    "code": "mh"
+  },
+  {
+    "word": "著",
+    "code": "cl"
+  },
+  {
+    "word": "食",
+    "code": "rd"
+  },
+  {
+    "word": "导",
+    "code": "vd"
+  },
+  {
+    "word": "免",
+    "code": "pv"
+  },
+  {
+    "word": "温",
+    "code": "ul"
+  },
+  {
+    "word": "莫",
+    "code": "cd"
+  },
+  {
+    "word": "掌",
+    "code": "sf"
+  },
+  {
+    "word": "激",
+    "code": "up"
+  },
+  {
+    "word": "慢",
+    "code": "xl"
+  },
+  {
+    "word": "托",
+    "code": "fp"
+  },
+  {
+    "word": "胜",
+    "code": "yp"
+  },
+  {
+    "word": "险",
+    "code": "vr"
+  },
+  {
+    "word": "寻",
+    "code": "vd"
+  },
+  {
+    "word": "守",
+    "code": "bd"
+  },
+  {
+    "word": "波",
+    "code": "uv"
+  },
+  {
+    "word": "雷",
+    "code": "hh"
+  },
+  {
+    "word": "沉",
+    "code": "ud"
+  },
+  {
+    "word": "秀",
+    "code": "ep"
+  },
+  {
+    "word": "职",
+    "code": "hk"
+  },
+  {
+    "word": "验",
+    "code": "vr"
+  },
+  {
+    "word": "靠",
+    "code": "ph"
+  },
+  {
+    "word": "楚",
+    "code": "md"
+  },
+  {
+    "word": "略",
+    "code": "sp"
+  },
+  {
+    "word": "族",
+    "code": "dp"
+  },
+  {
+    "word": "藏",
+    "code": "cd"
+  },
+  {
+    "word": "丽",
+    "code": "hd"
+  },
+  {
+    "word": "渐",
+    "code": "uh"
+  },
+  {
+    "word": "刘",
+    "code": "ds"
+  },
+  {
+    "word": "仅",
+    "code": "rv"
+  },
+  {
+    "word": "肯",
+    "code": "sy"
+  },
+  {
+    "word": "担",
+    "code": "fl"
+  },
+  {
+    "word": "扬",
+    "code": "fv"
+  },
+  {
+    "word": "盘",
+    "code": "ph"
+  },
+  {
+    "word": "唐",
+    "code": "dk"
+  },
+  {
+    "word": "钟",
+    "code": "jk"
+  },
+  {
+    "word": "级",
+    "code": "ip"
+  },
+  {
+    "word": "毛",
+    "code": "pv"
+  },
+  {
+    "word": "营",
+    "code": "ck"
+  },
+  {
+    "word": "坚",
+    "code": "st"
+  },
+  {
+    "word": "松",
+    "code": "mp"
+  },
+  {
+    "word": "皮",
+    "code": "vd"
+  },
+  {
+    "word": "供",
+    "code": "rc"
+  },
+  {
+    "word": "店",
+    "code": "dk"
+  },
+  {
+    "word": "饭",
+    "code": "pp"
+  },
+  {
+    "word": "范",
+    "code": "cv"
+  },
+  {
+    "word": "哈",
+    "code": "kr"
+  },
+  {
+    "word": "赶",
+    "code": "ts"
+  },
+  {
+    "word": "吧",
+    "code": "kv"
+  },
+  {
+    "word": "雪",
+    "code": "hh"
+  },
+  {
+    "word": "斗",
+    "code": "ds"
+  },
+  {
+    "word": "效",
+    "code": "dp"
+  },
+  {
+    "word": "临",
+    "code": "sp"
+  },
+  {
+    "word": "农",
+    "code": "dd"
+  },
+  {
+    "word": "味",
+    "code": "kh"
+  },
+  {
+    "word": "恶",
+    "code": "hx"
+  },
+  {
+    "word": "烟",
+    "code": "qk"
+  },
+  {
+    "word": "园",
+    "code": "sv"
+  },
+  {
+    "word": "烈",
+    "code": "hq"
+  },
+  {
+    "word": "配",
+    "code": "hv"
+  },
+  {
+    "word": "杂",
+    "code": "pm"
+  },
+  {
+    "word": "短",
+    "code": "ph"
+  },
+  {
+    "word": "卫",
+    "code": "vh"
+  },
+  {
+    "word": "跳",
+    "code": "zp"
+  },
+  {
+    "word": "孙",
+    "code": "vs"
+  },
+  {
+    "word": "曲",
+    "code": "sh"
+  },
+  {
+    "word": "封",
+    "code": "th"
+  },
+  {
+    "word": "抓",
+    "code": "fp"
+  },
+  {
+    "word": "移",
+    "code": "ep"
+  },
+  {
+    "word": "顿",
+    "code": "hh"
+  },
+  {
+    "word": "律",
+    "code": "pv"
+  },
+  {
+    "word": "卖",
+    "code": "hd"
+  },
+  {
+    "word": "艺",
+    "code": "cv"
+  },
+  {
+    "word": "旧",
+    "code": "sl"
+  },
+  {
+    "word": "朋",
+    "code": "yy"
+  },
+  {
+    "word": "救",
+    "code": "hp"
+  },
+  {
+    "word": "防",
+    "code": "vd"
+  },
+  {
+    "word": "脱",
+    "code": "yd"
+  },
+  {
+    "word": "翻",
+    "code": "pv"
+  },
+  {
+    "word": "划",
+    "code": "hs"
+  },
+  {
+    "word": "迎",
+    "code": "pg"
+  },
+  {
+    "word": "痛",
+    "code": "ds"
+  },
+  {
+    "word": "校",
+    "code": "md"
+  },
+  {
+    "word": "窗",
+    "code": "bh"
+  },
+  {
+    "word": "宣",
+    "code": "bh"
+  },
+  {
+    "word": "乡",
+    "code": "ip"
+  },
+  {
+    "word": "杨",
+    "code": "mv"
+  },
+  {
+    "word": "叶",
+    "code": "kh"
+  },
+  {
+    "word": "警",
+    "code": "ca"
+  },
+  {
+    "word": "限",
+    "code": "vv"
+  },
+  {
+    "word": "湖",
+    "code": "uh"
+  },
+  {
+    "word": "软",
+    "code": "hp"
+  },
+  {
+    "word": "掉",
+    "code": "fs"
+  },
+  {
+    "word": "财",
+    "code": "sh"
+  },
+  {
+    "word": "词",
+    "code": "av"
+  },
+  {
+    "word": "压",
+    "code": "hd"
+  },
+  {
+    "word": "挥",
+    "code": "fd"
+  },
+  {
+    "word": "超",
+    "code": "tk"
+  },
+  {
+    "word": "屋",
+    "code": "vt"
+  },
+  {
+    "word": "秋",
+    "code": "eq"
+  },
+  {
+    "word": "跑",
+    "code": "zp"
+  },
+  {
+    "word": "忘",
+    "code": "dx"
+  },
+  {
+    "word": "馆",
+    "code": "pb"
+  },
+  {
+    "word": "暗",
+    "code": "ld"
+  },
+  {
+    "word": "班",
+    "code": "wd"
+  },
+  {
+    "word": "党",
+    "code": "sv"
+  },
+  {
+    "word": "宗",
+    "code": "bd"
+  },
+  {
+    "word": "坏",
+    "code": "th"
+  },
+  {
+    "word": "技",
+    "code": "fh"
+  },
+  {
+    "word": "困",
+    "code": "sm"
+  },
+  {
+    "word": "登",
+    "code": "vh"
+  },
+  {
+    "word": "姐",
+    "code": "ns"
+  },
+  {
+    "word": "预",
+    "code": "vh"
+  },
+  {
+    "word": "耳",
+    "code": "hh"
+  },
+  {
+    "word": "席",
+    "code": "ds"
+  },
+  {
+    "word": "梦",
+    "code": "md"
+  },
+  {
+    "word": "朱",
+    "code": "pm"
+  },
+  {
+    "word": "组",
+    "code": "is"
+  },
+  {
+    "word": "旁",
+    "code": "dp"
+  },
+  {
+    "word": "份",
+    "code": "rp"
+  },
+  {
+    "word": "禁",
+    "code": "md"
+  },
+  {
+    "word": "套",
+    "code": "hd"
+  },
+  {
+    "word": "亚",
+    "code": "hh"
+  },
+  {
+    "word": "益",
+    "code": "dh"
+  },
+  {
+    "word": "探",
+    "code": "fd"
+  },
+  {
+    "word": "康",
+    "code": "du"
+  },
+  {
+    "word": "增",
+    "code": "td"
+  },
+  {
+    "word": "诗",
+    "code": "at"
+  },
+  {
+    "word": "戏",
+    "code": "vh"
+  },
+  {
+    "word": "伯",
+    "code": "rp"
+  },
+  {
+    "word": "晓",
+    "code": "lh"
+  },
+  {
+    "word": "含",
+    "code": "rk"
+  },
+  {
+    "word": "劳",
+    "code": "cp"
+  },
+  {
+    "word": "恩",
+    "code": "kx"
+  },
+  {
+    "word": "顶",
+    "code": "hh"
+  },
+  {
+    "word": "君",
+    "code": "vk"
+  },
+  {
+    "word": "庄",
+    "code": "dt"
+  },
+  {
+    "word": "谓",
+    "code": "as"
+  },
+  {
+    "word": "付",
+    "code": "rh"
+  },
+  {
+    "word": "田",
+    "code": "sh"
+  },
+  {
+    "word": "毕",
+    "code": "hs"
+  },
+  {
+    "word": "纸",
+    "code": "ip"
+  },
+  {
+    "word": "研",
+    "code": "hh"
+  },
+  {
+    "word": "虚",
+    "code": "sh"
+  },
+  {
+    "word": "怪",
+    "code": "xv"
+  },
+  {
+    "word": "宁",
+    "code": "bs"
+  },
+  {
+    "word": "替",
+    "code": "hl"
+  },
+  {
+    "word": "犯",
+    "code": "pv"
+  },
+  {
+    "word": "灯",
+    "code": "qh"
+  },
+  {
+    "word": "优",
+    "code": "rh"
+  },
+  {
+    "word": "您",
+    "code": "rx"
+  },
+  {
+    "word": "姓",
+    "code": "np"
+  },
+  {
+    "word": "例",
+    "code": "rh"
+  },
+  {
+    "word": "丝",
+    "code": "ii"
+  },
+  {
+    "word": "盖",
+    "code": "dh"
+  },
+  {
+    "word": "误",
+    "code": "ak"
+  },
+  {
+    "word": "架",
+    "code": "vm"
+  },
+  {
+    "word": "幸",
+    "code": "ts"
+  },
+  {
+    "word": "隐",
+    "code": "vp"
+  },
+  {
+    "word": "股",
+    "code": "yp"
+  },
+  {
+    "word": "毒",
+    "code": "hd"
+  },
+  {
+    "word": "娘",
+    "code": "nd"
+  },
+  {
+    "word": "占",
+    "code": "sk"
+  },
+  {
+    "word": "智",
+    "code": "pl"
+  },
+  {
+    "word": "佛",
+    "code": "rv"
+  },
+  {
+    "word": "床",
+    "code": "dm"
+  },
+  {
+    "word": "米",
+    "code": "dm"
+  },
+  {
+    "word": "凡",
+    "code": "pd"
+  },
+  {
+    "word": "介",
+    "code": "rs"
+  },
+  {
+    "word": "征",
+    "code": "ph"
+  },
+  {
+    "word": "彩",
+    "code": "pp"
+  },
+  {
+    "word": "演",
+    "code": "ub"
+  },
+  {
+    "word": "射",
+    "code": "ph"
+  },
+  {
+    "word": "祖",
+    "code": "ds"
+  },
+  {
+    "word": "欲",
+    "code": "pp"
+  },
+  {
+    "word": "束",
+    "code": "hd"
+  },
+  {
+    "word": "获",
+    "code": "cd"
+  },
+  {
+    "word": "舞",
+    "code": "ps"
+  },
+  {
+    "word": "圣",
+    "code": "vt"
+  },
+  {
+    "word": "伙",
+    "code": "rq"
+  },
+  {
+    "word": "梅",
+    "code": "mp"
+  },
+  {
+    "word": "普",
+    "code": "dl"
+  },
+  {
+    "word": "借",
+    "code": "rc"
+  },
+  {
+    "word": "私",
+    "code": "ev"
+  },
+  {
+    "word": "源",
+    "code": "uh"
+  },
+  {
+    "word": "镇",
+    "code": "jh"
+  },
+  {
+    "word": "睡",
+    "code": "sp"
+  },
+  {
+    "word": "缓",
+    "code": "ip"
+  },
+  {
+    "word": "升",
+    "code": "pc"
+  },
+  {
+    "word": "纳",
+    "code": "is"
+  },
+  {
+    "word": "织",
+    "code": "ik"
+  },
+  {
+    "word": "歌",
+    "code": "hp"
+  },
+  {
+    "word": "宫",
+    "code": "bk"
+  },
+  {
+    "word": "概",
+    "code": "mv"
+  },
+  {
+    "word": "野",
+    "code": "lv"
+  },
+  {
+    "word": "醒",
+    "code": "hl"
+  },
+  {
+    "word": "夏",
+    "code": "hd"
+  },
+  {
+    "word": "互",
+    "code": "hh"
+  },
+  {
+    "word": "积",
+    "code": "ek"
+  },
+  {
+    "word": "街",
+    "code": "pt"
+  },
+  {
+    "word": "牌",
+    "code": "pp"
+  },
+  {
+    "word": "休",
+    "code": "rm"
+  },
+  {
+    "word": "摇",
+    "code": "fp"
+  },
+  {
+    "word": "洋",
+    "code": "ud"
+  },
+  {
+    "word": "败",
+    "code": "sp"
+  },
+  {
+    "word": "监",
+    "code": "sh"
+  },
+  {
+    "word": "骨",
+    "code": "sy"
+  },
+  {
+    "word": "批",
+    "code": "fh"
+  },
+  {
+    "word": "兄",
+    "code": "kv"
+  },
+  {
+    "word": "刀",
+    "code": "vp"
+  },
+  {
+    "word": "网",
+    "code": "sd"
+  },
+  {
+    "word": "率",
+    "code": "ds"
+  },
+  {
+    "word": "庭",
+    "code": "dd"
+  },
+  {
+    "word": "熟",
+    "code": "dq"
+  },
+  {
+    "word": "创",
+    "code": "rs"
+  },
+  {
+    "word": "访",
+    "code": "ad"
+  },
+  {
+    "word": "硬",
+    "code": "hh"
+  },
+  {
+    "word": "仁",
+    "code": "rh"
+  },
+  {
+    "word": "菜",
+    "code": "cm"
+  },
+  {
+    "word": "丁",
+    "code": "hs"
+  },
+  {
+    "word": "绿",
+    "code": "iv"
+  },
+  {
+    "word": "牛",
+    "code": "ps"
+  },
+  {
+    "word": "避",
+    "code": "vg"
+  },
+  {
+    "word": "阴",
+    "code": "vy"
+  },
+  {
+    "word": "拍",
+    "code": "fp"
+  },
+  {
+    "word": "雄",
+    "code": "hr"
+  },
+  {
+    "word": "秘",
+    "code": "ex"
+  },
+  {
+    "word": "缺",
+    "code": "pv"
+  },
+  {
+    "word": "卷",
+    "code": "dv"
+  },
+  {
+    "word": "姑",
+    "code": "nh"
+  },
+  {
+    "word": "尼",
+    "code": "vv"
+  },
+  {
+    "word": "油",
+    "code": "us"
+  },
+  {
+    "word": "恐",
+    "code": "hx"
+  },
+  {
+    "word": "玩",
+    "code": "wh"
+  },
+  {
+    "word": "释",
+    "code": "pv"
+  },
+  {
+    "word": "遍",
+    "code": "dg"
+  },
+  {
+    "word": "握",
+    "code": "fv"
+  },
+  {
+    "word": "球",
+    "code": "wh"
+  },
+  {
+    "word": "降",
+    "code": "vp"
+  },
+  {
+    "word": "虑",
+    "code": "sx"
+  },
+  {
+    "word": "荣",
+    "code": "cm"
+  },
+  {
+    "word": "策",
+    "code": "gd"
+  },
+  {
+    "word": "肉",
+    "code": "sr"
+  },
+  {
+    "word": "妈",
+    "code": "nv"
+  },
+  {
+    "word": "迷",
+    "code": "dg"
+  },
+  {
+    "word": "检",
+    "code": "mr"
+  },
+  {
+    "word": "伸",
+    "code": "rl"
+  },
+  {
+    "word": "欧",
+    "code": "hp"
+  },
+  {
+    "word": "攻",
+    "code": "hp"
+  },
+  {
+    "word": "练",
+    "code": "ih"
+  },
+  {
+    "word": "育",
+    "code": "dy"
+  },
+  {
+    "word": "危",
+    "code": "pv"
+  },
+  {
+    "word": "厅",
+    "code": "hs"
+  },
+  {
+    "word": "啊",
+    "code": "kv"
+  },
+  {
+    "word": "睛",
+    "code": "sh"
+  },
+  {
+    "word": "摆",
+    "code": "fs"
+  },
+  {
+    "word": "茶",
+    "code": "cm"
+  },
+  {
+    "word": "勇",
+    "code": "vp"
+  },
+  {
+    "word": "判",
+    "code": "ds"
+  },
+  {
+    "word": "材",
+    "code": "mh"
+  },
+  {
+    "word": "抱",
+    "code": "fp"
+  },
+  {
+    "word": "亦",
+    "code": "dd"
+  },
+  {
+    "word": "妻",
+    "code": "hn"
+  },
+  {
+    "word": "吸",
+    "code": "kp"
+  },
+  {
+    "word": "喝",
+    "code": "kl"
+  },
+  {
+    "word": "趣",
+    "code": "td"
+  },
+  {
+    "word": "嘴",
+    "code": "ks"
+  },
+  {
+    "word": "逐",
+    "code": "hg"
+  },
+  {
+    "word": "操",
+    "code": "fk"
+  },
+  {
+    "word": "午",
+    "code": "ps"
+  },
+  {
+    "word": "吉",
+    "code": "tk"
+  },
+  {
+    "word": "浪",
+    "code": "ud"
+  },
+  {
+    "word": "轮",
+    "code": "hr"
+  },
+  {
+    "word": "默",
+    "code": "sh"
+  },
+  {
+    "word": "毫",
+    "code": "dv"
+  },
+  {
+    "word": "冰",
+    "code": "du"
+  },
+  {
+    "word": "珠",
+    "code": "wp"
+  },
+  {
+    "word": "鼓",
+    "code": "th"
+  },
+  {
+    "word": "阶",
+    "code": "vr"
+  },
+  {
+    "word": "孔",
+    "code": "vv"
+  },
+  {
+    "word": "徐",
+    "code": "pr"
+  },
+  {
+    "word": "固",
+    "code": "sk"
+  },
+  {
+    "word": "偏",
+    "code": "rd"
+  },
+  {
+    "word": "陆",
+    "code": "vh"
+  },
+  {
+    "word": "诸",
+    "code": "at"
+  },
+  {
+    "word": "遗",
+    "code": "kg"
+  },
+  {
+    "word": "爷",
+    "code": "ps"
+  },
+  {
+    "word": "述",
+    "code": "mg"
+  },
+  {
+    "word": "帝",
+    "code": "ds"
+  },
+  {
+    "word": "闭",
+    "code": "dp"
+  },
+  {
+    "word": "补",
+    "code": "ds"
+  },
+  {
+    "word": "编",
+    "code": "id"
+  },
+  {
+    "word": "巨",
+    "code": "hv"
+  },
+  {
+    "word": "透",
+    "code": "eg"
+  },
+  {
+    "word": "弄",
+    "code": "wc"
+  },
+  {
+    "word": "尤",
+    "code": "hd"
+  },
+  {
+    "word": "鲁",
+    "code": "pl"
+  },
+  {
+    "word": "拥",
+    "code": "fp"
+  },
+  {
+    "word": "录",
+    "code": "vu"
+  },
+  {
+    "word": "吴",
+    "code": "kd"
+  },
+  {
+    "word": "墙",
+    "code": "th"
+  },
+  {
+    "word": "货",
+    "code": "rr"
+  },
+  {
+    "word": "弱",
+    "code": "vv"
+  },
+  {
+    "word": "敌",
+    "code": "pp"
+  },
+  {
+    "word": "挑",
+    "code": "fp"
+  },
+  {
+    "word": "宽",
+    "code": "bv"
+  },
+  {
+    "word": "迹",
+    "code": "dg"
+  },
+  {
+    "word": "抽",
+    "code": "fs"
+  },
+  {
+    "word": "忍",
+    "code": "vx"
+  },
+  {
+    "word": "折",
+    "code": "fp"
+  },
+  {
+    "word": "输",
+    "code": "hr"
+  },
+  {
+    "word": "稳",
+    "code": "ep"
+  },
+  {
+    "word": "皇",
+    "code": "pw"
+  },
+  {
+    "word": "桌",
+    "code": "sm"
+  },
+  {
+    "word": "献",
+    "code": "hh"
+  },
+  {
+    "word": "蒙",
+    "code": "cd"
+  },
+  {
+    "word": "纷",
+    "code": "ip"
+  },
+  {
+    "word": "麻",
+    "code": "dm"
+  },
+  {
+    "word": "洗",
+    "code": "up"
+  },
+  {
+    "word": "评",
+    "code": "ah"
+  },
+  {
+    "word": "挂",
+    "code": "ft"
+  },
+  {
+    "word": "童",
+    "code": "dt"
+  },
+  {
+    "word": "尊",
+    "code": "dd"
+  },
+  {
+    "word": "舍",
+    "code": "rk"
+  },
+  {
+    "word": "唯",
+    "code": "kr"
+  },
+  {
+    "word": "博",
+    "code": "hh"
+  },
+  {
+    "word": "剧",
+    "code": "vs"
+  },
+  {
+    "word": "乃",
+    "code": "vp"
+  },
+  {
+    "word": "混",
+    "code": "ul"
+  },
+  {
+    "word": "弹",
+    "code": "vd"
+  },
+  {
+    "word": "附",
+    "code": "vr"
+  },
+  {
+    "word": "迟",
+    "code": "vg"
+  },
+  {
+    "word": "敬",
+    "code": "cp"
+  },
+  {
+    "word": "杯",
+    "code": "mh"
+  },
+  {
+    "word": "鱼",
+    "code": "ph"
+  },
+  {
+    "word": "控",
+    "code": "fb"
+  },
+  {
+    "word": "塞",
+    "code": "bt"
+  },
+  {
+    "word": "剑",
+    "code": "rs"
+  },
+  {
+    "word": "厚",
+    "code": "hh"
+  },
+  {
+    "word": "佳",
+    "code": "rt"
+  },
+  {
+    "word": "测",
+    "code": "us"
+  },
+  {
+    "word": "训",
+    "code": "ap"
+  },
+  {
+    "word": "牙",
+    "code": "hp"
+  },
+  {
+    "word": "洞",
+    "code": "us"
+  },
+  {
+    "word": "淡",
+    "code": "uq"
+  },
+  {
+    "word": "盛",
+    "code": "hh"
+  },
+  {
+    "word": "县",
+    "code": "sd"
+  },
+  {
+    "word": "芳",
+    "code": "cp"
+  },
+  {
+    "word": "雅",
+    "code": "hr"
+  },
+  {
+    "word": "革",
+    "code": "cs"
+  },
+  {
+    "word": "款",
+    "code": "tp"
+  },
+  {
+    "word": "横",
+    "code": "mc"
+  },
+  {
+    "word": "累",
+    "code": "si"
+  },
+  {
+    "word": "择",
+    "code": "fv"
+  },
+  {
+    "word": "乘",
+    "code": "pd"
+  },
+  {
+    "word": "刺",
+    "code": "hs"
+  },
+  {
+    "word": "载",
+    "code": "td"
+  },
+  {
+    "word": "猛",
+    "code": "pv"
+  },
+  {
+    "word": "逃",
+    "code": "pg"
+  },
+  {
+    "word": "构",
+    "code": "mp"
+  },
+  {
+    "word": "赵",
+    "code": "td"
+  },
+  {
+    "word": "杜",
+    "code": "mt"
+  },
+  {
+    "word": "庆",
+    "code": "dd"
+  },
+  {
+    "word": "途",
+    "code": "rg"
+  },
+  {
+    "word": "奔",
+    "code": "hc"
+  },
+  {
+    "word": "虎",
+    "code": "sv"
+  },
+  {
+    "word": "巧",
+    "code": "hh"
+  },
+  {
+    "word": "抗",
+    "code": "fd"
+  },
+  {
+    "word": "针",
+    "code": "jh"
+  },
+  {
+    "word": "徒",
+    "code": "pt"
+  },
+  {
+    "word": "圆",
+    "code": "sr"
+  },
+  {
+    "word": "闪",
+    "code": "dr"
+  },
+  {
+    "word": "谷",
+    "code": "pk"
+  },
+  {
+    "word": "绍",
+    "code": "iv"
+  },
+  {
+    "word": "聚",
+    "code": "hd"
+  },
+  {
+    "word": "额",
+    "code": "bh"
+  },
+  {
+    "word": "健",
+    "code": "rv"
+  },
+  {
+    "word": "诚",
+    "code": "ah"
+  },
+  {
+    "word": "鲜",
+    "code": "pd"
+  },
+  {
+    "word": "泪",
+    "code": "us"
+  },
+  {
+    "word": "闲",
+    "code": "dm"
+  },
+  {
+    "word": "均",
+    "code": "tp"
+  },
+  {
+    "word": "序",
+    "code": "ds"
+  },
+  {
+    "word": "震",
+    "code": "hd"
+  },
+  {
+    "word": "仿",
+    "code": "rd"
+  },
+  {
+    "word": "缘",
+    "code": "iv"
+  },
+  {
+    "word": "戴",
+    "code": "td"
+  },
+  {
+    "word": "婚",
+    "code": "np"
+  },
+  {
+    "word": "篇",
+    "code": "gc"
+  },
+  {
+    "word": "亡",
+    "code": "dv"
+  },
+  {
+    "word": "奶",
+    "code": "nv"
+  },
+  {
+    "word": "忠",
+    "code": "kx"
+  },
+  {
+    "word": "烦",
+    "code": "qh"
+  },
+  {
+    "word": "赛",
+    "code": "br"
+  },
+  {
+    "word": "闹",
+    "code": "ds"
+  },
+  {
+    "word": "协",
+    "code": "hv"
+  },
+  {
+    "word": "杰",
+    "code": "mq"
+  },
+  {
+    "word": "残",
+    "code": "hh"
+  },
+  {
+    "word": "懂",
+    "code": "xc"
+  },
+  {
+    "word": "丹",
+    "code": "ph"
+  },
+  {
+    "word": "柳",
+    "code": "mp"
+  },
+  {
+    "word": "妹",
+    "code": "nh"
+  },
+  {
+    "word": "映",
+    "code": "ls"
+  },
+  {
+    "word": "桥",
+    "code": "mp"
+  },
+  {
+    "word": "叹",
+    "code": "kv"
+  },
+  {
+    "word": "愈",
+    "code": "rx"
+  },
+  {
+    "word": "旅",
+    "code": "dp"
+  },
+  {
+    "word": "授",
+    "code": "fp"
+  },
+  {
+    "word": "享",
+    "code": "dh"
+  },
+  {
+    "word": "暴",
+    "code": "lu"
+  },
+  {
+    "word": "偷",
+    "code": "rr"
+  },
+  {
+    "word": "蓝",
+    "code": "ch"
+  },
+  {
+    "word": "氏",
+    "code": "pv"
+  },
+  {
+    "word": "寒",
+    "code": "bd"
+  },
+  {
+    "word": "宜",
+    "code": "bh"
+  },
+  {
+    "word": "弃",
+    "code": "dc"
+  },
+  {
+    "word": "丰",
+    "code": "hs"
+  },
+  {
+    "word": "延",
+    "code": "pd"
+  },
+  {
+    "word": "辈",
+    "code": "ss"
+  },
+  {
+    "word": "抢",
+    "code": "fr"
+  },
+  {
+    "word": "颜",
+    "code": "dh"
+  },
+  {
+    "word": "赞",
+    "code": "pr"
+  },
+  {
+    "word": "典",
+    "code": "sd"
+  },
+  {
+    "word": "冒",
+    "code": "lh"
+  },
+  {
+    "word": "眉",
+    "code": "vh"
+  },
+  {
+    "word": "烧",
+    "code": "qh"
+  },
+  {
+    "word": "厂",
+    "code": "hp"
+  },
+  {
+    "word": "唱",
+    "code": "kl"
+  },
+  {
+    "word": "径",
+    "code": "pv"
+  },
+  {
+    "word": "库",
+    "code": "ds"
+  },
+  {
+    "word": "川",
+    "code": "ps"
+  },
+  {
+    "word": "辞",
+    "code": "pd"
+  },
+  {
+    "word": "伴",
+    "code": "rd"
+  },
+  {
+    "word": "怒",
+    "code": "nx"
+  },
+  {
+    "word": "型",
+    "code": "ht"
+  },
+  {
+    "word": "纯",
+    "code": "ih"
+  },
+  {
+    "word": "贝",
+    "code": "sr"
+  },
+  {
+    "word": "票",
+    "code": "hd"
+  },
+  {
+    "word": "隔",
+    "code": "vh"
+  },
+  {
+    "word": "穷",
+    "code": "bp"
+  },
+  {
+    "word": "拜",
+    "code": "ph"
+  },
+  {
+    "word": "审",
+    "code": "bs"
+  },
+  {
+    "word": "伦",
+    "code": "rr"
+  },
+  {
+    "word": "悲",
+    "code": "sx"
+  },
+  {
+    "word": "柔",
+    "code": "vm"
+  },
+  {
+    "word": "启",
+    "code": "dk"
+  },
+  {
+    "word": "减",
+    "code": "dh"
+  },
+  {
+    "word": "页",
+    "code": "hr"
+  },
+  {
+    "word": "纵",
+    "code": "ir"
+  },
+  {
+    "word": "扫",
+    "code": "fv"
+  },
+  {
+    "word": "伟",
+    "code": "rh"
+  },
+  {
+    "word": "迫",
+    "code": "pg"
+  },
+  {
+    "word": "振",
+    "code": "fh"
+  },
+  {
+    "word": "瑞",
+    "code": "ws"
+  },
+  {
+    "word": "丈",
+    "code": "hd"
+  },
+  {
+    "word": "梁",
+    "code": "um"
+  },
+  {
+    "word": "洲",
+    "code": "ud"
+  },
+  {
+    "word": "枪",
+    "code": "mr"
+  },
+  {
+    "word": "央",
+    "code": "sd"
+  },
+  {
+    "word": "触",
+    "code": "po"
+  },
+  {
+    "word": "予",
+    "code": "vs"
+  },
+  {
+    "word": "孤",
+    "code": "vp"
+  },
+  {
+    "word": "缩",
+    "code": "ib"
+  },
+  {
+    "word": "洛",
+    "code": "up"
+  },
+  {
+    "word": "损",
+    "code": "fk"
+  },
+  {
+    "word": "促",
+    "code": "rz"
+  },
+  {
+    "word": "番",
+    "code": "ph"
+  },
+  {
+    "word": "罢",
+    "code": "sd"
+  },
+  {
+    "word": "宋",
+    "code": "bm"
+  },
+  {
+    "word": "奋",
+    "code": "hh"
+  },
+  {
+    "word": "销",
+    "code": "js"
+  },
+  {
+    "word": "幕",
+    "code": "cs"
+  },
+  {
+    "word": "犹",
+    "code": "ph"
+  },
+  {
+    "word": "锁",
+    "code": "js"
+  },
+  {
+    "word": "珍",
+    "code": "wr"
+  },
+  {
+    "word": "抬",
+    "code": "fv"
+  },
+  {
+    "word": "陪",
+    "code": "vd"
+  },
+  {
+    "word": "妙",
+    "code": "ns"
+  },
+  {
+    "word": "摸",
+    "code": "fc"
+  },
+  {
+    "word": "峰",
+    "code": "sp"
+  },
+  {
+    "word": "劲",
+    "code": "vv"
+  },
+  {
+    "word": "镜",
+    "code": "jd"
+  },
+  {
+    "word": "沈",
+    "code": "ud"
+  },
+  {
+    "word": "夺",
+    "code": "hd"
+  },
+  {
+    "word": "昨",
+    "code": "lp"
+  },
+  {
+    "word": "哭",
+    "code": "kd"
+  },
+  {
+    "word": "讯",
+    "code": "av"
+  },
+  {
+    "word": "貌",
+    "code": "pp"
+  },
+  {
+    "word": "谋",
+    "code": "ac"
+  },
+  {
+    "word": "泰",
+    "code": "hu"
+  },
+  {
+    "word": "侧",
+    "code": "rs"
+  },
+  {
+    "word": "贫",
+    "code": "pr"
+  },
+  {
+    "word": "扶",
+    "code": "fh"
+  },
+  {
+    "word": "阻",
+    "code": "vs"
+  },
+  {
+    "word": "贴",
+    "code": "ss"
+  },
+  {
+    "word": "申",
+    "code": "ls"
+  },
+  {
+    "word": "岸",
+    "code": "ss"
+  },
+  {
+    "word": "彼",
+    "code": "pv"
+  },
+  {
+    "word": "赏",
+    "code": "sr"
+  },
+  {
+    "word": "版",
+    "code": "pp"
+  },
+  {
+    "word": "抵",
+    "code": "fp"
+  },
+  {
+    "word": "泽",
+    "code": "uv"
+  },
+  {
+    "word": "插",
+    "code": "fp"
+  },
+  {
+    "word": "迅",
+    "code": "vg"
+  },
+  {
+    "word": "凭",
+    "code": "rv"
+  },
+  {
+    "word": "伊",
+    "code": "rv"
+  },
+  {
+    "word": "潮",
+    "code": "uh"
+  },
+  {
+    "word": "咱",
+    "code": "kp"
+  },
+  {
+    "word": "仙",
+    "code": "rs"
+  },
+  {
+    "word": "符",
+    "code": "gd"
+  },
+  {
+    "word": "宇",
+    "code": "bs"
+  },
+  {
+    "word": "肩",
+    "code": "dy"
+  },
+  {
+    "word": "尝",
+    "code": "sd"
+  },
+  {
+    "word": "递",
+    "code": "dg"
+  },
+  {
+    "word": "燕",
+    "code": "cq"
+  },
+  {
+    "word": "洁",
+    "code": "ut"
+  },
+  {
+    "word": "拒",
+    "code": "fh"
+  },
+  {
+    "word": "郎",
+    "code": "dv"
+  },
+  {
+    "word": "凝",
+    "code": "dp"
+  },
+  {
+    "word": "净",
+    "code": "dp"
+  },
+  {
+    "word": "遭",
+    "code": "hg"
+  },
+  {
+    "word": "仪",
+    "code": "rd"
+  },
+  {
+    "word": "薄",
+    "code": "cd"
+  },
+  {
+    "word": "卡",
+    "code": "sd"
+  },
+  {
+    "word": "末",
+    "code": "hm"
+  },
+  {
+    "word": "勒",
+    "code": "cv"
+  },
+  {
+    "word": "乌",
+    "code": "ph"
+  },
+  {
+    "word": "森",
+    "code": "mm"
+  },
+  {
+    "word": "诺",
+    "code": "ac"
+  },
+  {
+    "word": "呀",
+    "code": "kh"
+  },
+  {
+    "word": "壮",
+    "code": "dt"
+  },
+  {
+    "word": "忧",
+    "code": "xh"
+  },
+  {
+    "word": "沿",
+    "code": "up"
+  },
+  {
+    "word": "惯",
+    "code": "xv"
+  },
+  {
+    "word": "丢",
+    "code": "pd"
+  },
+  {
+    "word": "季",
+    "code": "eh"
+  },
+  {
+    "word": "企",
+    "code": "rh"
+  },
+  {
+    "word": "壁",
+    "code": "vt"
+  },
+  {
+    "word": "惜",
+    "code": "xc"
+  },
+  {
+    "word": "婆",
+    "code": "un"
+  },
+  {
+    "word": "袋",
+    "code": "rd"
+  },
+  {
+    "word": "朗",
+    "code": "dy"
+  },
+  {
+    "word": "零",
+    "code": "hd"
+  },
+  {
+    "word": "辛",
+    "code": "ds"
+  },
+  {
+    "word": "忆",
+    "code": "xv"
+  },
+  {
+    "word": "努",
+    "code": "np"
+  },
+  {
+    "word": "舒",
+    "code": "rv"
+  },
+  {
+    "word": "枝",
+    "code": "mh"
+  },
+  {
+    "word": "凤",
+    "code": "pd"
+  },
+  {
+    "word": "灭",
+    "code": "hq"
+  },
+  {
+    "word": "韩",
+    "code": "hh"
+  },
+  {
+    "word": "胆",
+    "code": "yl"
+  },
+  {
+    "word": "灰",
+    "code": "hq"
+  },
+  {
+    "word": "旦",
+    "code": "lh"
+  },
+  {
+    "word": "孟",
+    "code": "vh"
+  },
+  {
+    "word": "陷",
+    "code": "vp"
+  },
+  {
+    "word": "俗",
+    "code": "rp"
+  },
+  {
+    "word": "绕",
+    "code": "ih"
+  },
+  {
+    "word": "疾",
+    "code": "dd"
+  },
+  {
+    "word": "瞧",
+    "code": "sr"
+  },
+  {
+    "word": "洪",
+    "code": "uc"
+  },
+  {
+    "word": "甲",
+    "code": "ls"
+  },
+  {
+    "word": "帐",
+    "code": "sp"
+  },
+  {
+    "word": "糊",
+    "code": "dh"
+  },
+  {
+    "word": "泛",
+    "code": "up"
+  },
+  {
+    "word": "皆",
+    "code": "hl"
+  },
+  {
+    "word": "碰",
+    "code": "hd"
+  },
+  {
+    "word": "吹",
+    "code": "kp"
+  },
+  {
+    "word": "码",
+    "code": "hv"
+  },
+  {
+    "word": "奉",
+    "code": "hs"
+  },
+  {
+    "word": "箱",
+    "code": "gh"
+  },
+  {
+    "word": "倾",
+    "code": "rh"
+  },
+  {
+    "word": "胸",
+    "code": "yp"
+  },
+  {
+    "word": "堆",
+    "code": "tr"
+  },
+  {
+    "word": "狂",
+    "code": "pw"
+  },
+  {
+    "word": "仲",
+    "code": "rk"
+  },
+  {
+    "word": "圈",
+    "code": "sv"
+  },
+  {
+    "word": "冬",
+    "code": "pd"
+  },
+  {
+    "word": "餐",
+    "code": "sd"
+  },
+  {
+    "word": "厉",
+    "code": "hp"
+  },
+  {
+    "word": "腿",
+    "code": "yv"
+  },
+  {
+    "word": "尖",
+    "code": "sd"
+  },
+  {
+    "word": "括",
+    "code": "fp"
+  },
+  {
+    "word": "佩",
+    "code": "rp"
+  },
+  {
+    "word": "鬼",
+    "code": "pd"
+  },
+  {
+    "word": "欣",
+    "code": "pp"
+  },
+  {
+    "word": "垂",
+    "code": "ph"
+  },
+  {
+    "word": "跃",
+    "code": "zp"
+  },
+  {
+    "word": "港",
+    "code": "uc"
+  },
+  {
+    "word": "骗",
+    "code": "vd"
+  },
+  {
+    "word": "融",
+    "code": "ho"
+  },
+  {
+    "word": "撞",
+    "code": "fd"
+  },
+  {
+    "word": "塔",
+    "code": "tc"
+  },
+  {
+    "word": "紫",
+    "code": "si"
+  },
+  {
+    "word": "荡",
+    "code": "cp"
+  },
+  {
+    "word": "敏",
+    "code": "pp"
+  },
+  {
+    "word": "郑",
+    "code": "dv"
+  },
+  {
+    "word": "赖",
+    "code": "hp"
+  },
+  {
+    "word": "滑",
+    "code": "us"
+  },
+  {
+    "word": "允",
+    "code": "vv"
+  },
+  {
+    "word": "鸟",
+    "code": "ph"
+  },
+  {
+    "word": "课",
+    "code": "al"
+  },
+  {
+    "word": "暂",
+    "code": "hl"
+  },
+  {
+    "word": "瓦",
+    "code": "hd"
+  },
+  {
+    "word": "祥",
+    "code": "dd"
+  },
+  {
+    "word": "染",
+    "code": "um"
+  },
+  {
+    "word": "滚",
+    "code": "ud"
+  },
+  {
+    "word": "浮",
+    "code": "up"
+  },
+  {
+    "word": "粗",
+    "code": "ds"
+  },
+  {
+    "word": "刑",
+    "code": "hs"
+  },
+  {
+    "word": "辆",
+    "code": "hh"
+  },
+  {
+    "word": "狗",
+    "code": "pp"
+  },
+  {
+    "word": "扑",
+    "code": "fs"
+  },
+  {
+    "word": "稍",
+    "code": "es"
+  },
+  {
+    "word": "秦",
+    "code": "he"
+  },
+  {
+    "word": "扎",
+    "code": "fv"
+  },
+  {
+    "word": "魂",
+    "code": "hp"
+  },
+  {
+    "word": "岛",
+    "code": "ps"
+  },
+  {
+    "word": "腾",
+    "code": "yd"
+  },
+  {
+    "word": "臣",
+    "code": "hv"
+  },
+  {
+    "word": "琴",
+    "code": "wv"
+  },
+  {
+    "word": "悉",
+    "code": "px"
+  },
+  {
+    "word": "络",
+    "code": "ip"
+  },
+  {
+    "word": "摩",
+    "code": "df"
+  },
+  {
+    "word": "措",
+    "code": "fc"
+  },
+  {
+    "word": "域",
+    "code": "th"
+  },
+  {
+    "word": "冠",
+    "code": "dd"
+  },
+  {
+    "word": "竹",
+    "code": "gs"
+  },
+  {
+    "word": "殊",
+    "code": "hp"
+  },
+  {
+    "word": "豪",
+    "code": "dd"
+  },
+  {
+    "word": "呆",
+    "code": "km"
+  },
+  {
+    "word": "萨",
+    "code": "cp"
+  },
+  {
+    "word": "旋",
+    "code": "dp"
+  },
+  {
+    "word": "喊",
+    "code": "kh"
+  },
+  {
+    "word": "寄",
+    "code": "bs"
+  },
+  {
+    "word": "悄",
+    "code": "xs"
+  },
+  {
+    "word": "倍",
+    "code": "rd"
+  },
+  {
+    "word": "祝",
+    "code": "dk"
+  },
+  {
+    "word": "剩",
+    "code": "ps"
+  },
+  {
+    "word": "督",
+    "code": "sh"
+  },
+  {
+    "word": "旗",
+    "code": "dp"
+  },
+  {
+    "word": "返",
+    "code": "pg"
+  },
+  {
+    "word": "召",
+    "code": "vk"
+  },
+  {
+    "word": "彻",
+    "code": "ph"
+  },
+  {
+    "word": "宾",
+    "code": "bd"
+  },
+  {
+    "word": "甘",
+    "code": "ch"
+  },
+  {
+    "word": "吐",
+    "code": "kt"
+  },
+  {
+    "word": "乔",
+    "code": "ps"
+  },
+  {
+    "word": "腰",
+    "code": "yh"
+  },
+  {
+    "word": "拔",
+    "code": "fh"
+  },
+  {
+    "word": "幅",
+    "code": "sh"
+  },
+  {
+    "word": "违",
+    "code": "hg"
+  },
+  {
+    "word": "详",
+    "code": "ad"
+  },
+  {
+    "word": "臂",
+    "code": "vy"
+  },
+  {
+    "word": "尺",
+    "code": "vd"
+  },
+  {
+    "word": "饮",
+    "code": "pp"
+  },
+  {
+    "word": "颗",
+    "code": "lh"
+  },
+  {
+    "word": "涉",
+    "code": "us"
+  },
+  {
+    "word": "逼",
+    "code": "hg"
+  },
+  {
+    "word": "竞",
+    "code": "dv"
+  },
+  {
+    "word": "培",
+    "code": "td"
+  },
+  {
+    "word": "惠",
+    "code": "hx"
+  },
+  {
+    "word": "亏",
+    "code": "hv"
+  },
+  {
+    "word": "叔",
+    "code": "sv"
+  },
+  {
+    "word": "伏",
+    "code": "rh"
+  },
+  {
+    "word": "唤",
+    "code": "kp"
+  },
+  {
+    "word": "鸡",
+    "code": "vp"
+  },
+  {
+    "word": "邻",
+    "code": "rv"
+  },
+  {
+    "word": "池",
+    "code": "uv"
+  },
+  {
+    "word": "怨",
+    "code": "px"
+  },
+  {
+    "word": "奥",
+    "code": "pd"
+  },
+  {
+    "word": "侯",
+    "code": "rv"
+  },
+  {
+    "word": "骑",
+    "code": "vh"
+  },
+  {
+    "word": "漫",
+    "code": "ul"
+  },
+  {
+    "word": "拖",
+    "code": "fp"
+  },
+  {
+    "word": "俊",
+    "code": "rv"
+  },
+  {
+    "word": "尾",
+    "code": "vv"
+  },
+  {
+    "word": "恨",
+    "code": "xv"
+  },
+  {
+    "word": "贯",
+    "code": "vr"
+  },
+  {
+    "word": "凌",
+    "code": "dt"
+  },
+  {
+    "word": "兼",
+    "code": "dd"
+  },
+  {
+    "word": "询",
+    "code": "ap"
+  },
+  {
+    "word": "碎",
+    "code": "hd"
+  },
+  {
+    "word": "晨",
+    "code": "ld"
+  },
+  {
+    "word": "罚",
+    "code": "ss"
+  },
+  {
+    "word": "铺",
+    "code": "jh"
+  },
+  {
+    "word": "浓",
+    "code": "ud"
+  },
+  {
+    "word": "伍",
+    "code": "rh"
+  },
+  {
+    "word": "宿",
+    "code": "bl"
+  },
+  {
+    "word": "泉",
+    "code": "pu"
+  },
+  {
+    "word": "井",
+    "code": "hs"
+  },
+  {
+    "word": "繁",
+    "code": "pi"
+  },
+  {
+    "word": "粉",
+    "code": "dp"
+  },
+  {
+    "word": "绪",
+    "code": "it"
+  },
+  {
+    "word": "筑",
+    "code": "gd"
+  },
+  {
+    "word": "恢",
+    "code": "xh"
+  },
+  {
+    "word": "匹",
+    "code": "hv"
+  },
+  {
+    "word": "尘",
+    "code": "st"
+  },
+  {
+    "word": "辉",
+    "code": "sd"
+  },
+  {
+    "word": "魔",
+    "code": "dd"
+  },
+  {
+    "word": "仰",
+    "code": "rp"
+  },
+  {
+    "word": "董",
+    "code": "ct"
+  },
+  {
+    "word": "描",
+    "code": "fc"
+  },
+  {
+    "word": "距",
+    "code": "zh"
+  },
+  {
+    "word": "盗",
+    "code": "dh"
+  },
+  {
+    "word": "渡",
+    "code": "ud"
+  },
+  {
+    "word": "勤",
+    "code": "cv"
+  },
+  {
+    "word": "劝",
+    "code": "vv"
+  },
+  {
+    "word": "莲",
+    "code": "cg"
+  },
+  {
+    "word": "坦",
+    "code": "tl"
+  },
+  {
+    "word": "搭",
+    "code": "fc"
+  },
+  {
+    "word": "挺",
+    "code": "fp"
+  },
+  {
+    "word": "踪",
+    "code": "zb"
+  },
+  {
+    "word": "幽",
+    "code": "ss"
+  },
+  {
+    "word": "截",
+    "code": "td"
+  },
+  {
+    "word": "荒",
+    "code": "cv"
+  },
+  {
+    "word": "恰",
+    "code": "xr"
+  },
+  {
+    "word": "慧",
+    "code": "hx"
+  },
+  {
+    "word": "邦",
+    "code": "hv"
+  },
+  {
+    "word": "颇",
+    "code": "vh"
+  },
+  {
+    "word": "焦",
+    "code": "rq"
+  },
+  {
+    "word": "醉",
+    "code": "hd"
+  },
+  {
+    "word": "废",
+    "code": "dd"
+  },
+  {
+    "word": "掩",
+    "code": "fh"
+  },
+  {
+    "word": "签",
+    "code": "gh"
+  },
+  {
+    "word": "丧",
+    "code": "hd"
+  },
+  {
+    "word": "灾",
+    "code": "bq"
+  },
+  {
+    "word": "鼻",
+    "code": "ps"
+  },
+  {
+    "word": "侵",
+    "code": "rv"
+  },
+  {
+    "word": "陶",
+    "code": "vp"
+  },
+  {
+    "word": "肃",
+    "code": "vd"
+  },
+  {
+    "word": "裁",
+    "code": "td"
+  },
+  {
+    "word": "俱",
+    "code": "rs"
+  },
+  {
+    "word": "磨",
+    "code": "dk"
+  },
+  {
+    "word": "析",
+    "code": "mp"
+  },
+  {
+    "word": "奖",
+    "code": "dd"
+  },
+  {
+    "word": "匆",
+    "code": "pd"
+  },
+  {
+    "word": "瓶",
+    "code": "dh"
+  },
+  {
+    "word": "泥",
+    "code": "uv"
+  },
+  {
+    "word": "拾",
+    "code": "fr"
+  },
+  {
+    "word": "凉",
+    "code": "dd"
+  },
+  {
+    "word": "麦",
+    "code": "hd"
+  },
+  {
+    "word": "钢",
+    "code": "js"
+  },
+  {
+    "word": "涌",
+    "code": "uv"
+  },
+  {
+    "word": "潜",
+    "code": "uh"
+  },
+  {
+    "word": "隆",
+    "code": "vp"
+  },
+  {
+    "word": "津",
+    "code": "uv"
+  },
+  {
+    "word": "搞",
+    "code": "fd"
+  },
+  {
+    "word": "蛋",
+    "code": "vo"
+  },
+  {
+    "word": "奈",
+    "code": "hd"
+  },
+  {
+    "word": "扰",
+    "code": "fh"
+  },
+  {
+    "word": "耐",
+    "code": "hh"
+  },
+  {
+    "word": "傅",
+    "code": "rh"
+  },
+  {
+    "word": "锦",
+    "code": "jp"
+  },
+  {
+    "word": "播",
+    "code": "fp"
+  },
+  {
+    "word": "墨",
+    "code": "st"
+  },
+  {
+    "word": "偶",
+    "code": "rl"
+  },
+  {
+    "word": "捕",
+    "code": "fh"
+  },
+  {
+    "word": "惑",
+    "code": "hx"
+  },
+  {
+    "word": "飘",
+    "code": "hp"
+  },
+  {
+    "word": "屈",
+    "code": "vs"
+  },
+  {
+    "word": "鸣",
+    "code": "kp"
+  },
+  {
+    "word": "挤",
+    "code": "fd"
+  },
+  {
+    "word": "毁",
+    "code": "pp"
+  },
+  {
+    "word": "斜",
+    "code": "rd"
+  },
+  {
+    "word": "啦",
+    "code": "kf"
+  },
+  {
+    "word": "污",
+    "code": "uh"
+  },
+  {
+    "word": "赤",
+    "code": "td"
+  },
+  {
+    "word": "慰",
+    "code": "vx"
+  },
+  {
+    "word": "饰",
+    "code": "pp"
+  },
+  {
+    "word": "锋",
+    "code": "jp"
+  },
+  {
+    "word": "覆",
+    "code": "hd"
+  },
+  {
+    "word": "汤",
+    "code": "uv"
+  },
+  {
+    "word": "寿",
+    "code": "hd"
+  },
+  {
+    "word": "跨",
+    "code": "zh"
+  },
+  {
+    "word": "羊",
+    "code": "ds"
+  }
+]

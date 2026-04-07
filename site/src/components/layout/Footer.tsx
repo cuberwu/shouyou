@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import logo from "@/app/icon.jpg";
 
 const footerLinks = [
   {
@@ -33,7 +34,6 @@ const footerLinks = [
 
 export default function Footer() {
   const pathname = usePathname();
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
   if (pathname.startsWith("/tutorial")) {
     return null;
@@ -46,7 +46,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <Image
-                src={`${basePath}/logo.jpg`}
+                src={logo}
                 alt="首右辅助码 Logo"
                 width={40}
                 height={40}

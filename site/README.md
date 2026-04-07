@@ -25,7 +25,6 @@ npm run build
 site/
 ├── src/app/             # 页面
 ├── src/components/      # 组件
-├── public/              # 静态资源
 └── next.config.ts       # 静态导出配置
 ```
 

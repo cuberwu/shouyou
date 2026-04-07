@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import RootKeyboardChart from "@/components/practice/RootKeyboardChart";
 import {
   buildRootQuestions,
+  practiceSchemeOrder,
   rootPracticeSchemes,
   type PracticeSchemeKey,
   type RootQuestion,
@@ -19,7 +20,6 @@ const shuffle = <T,>(source: T[]) => {
   return array;
 };
 
-const schemeList: PracticeSchemeKey[] = ["basic", "plus"];
 const rootPracticeStorageKey = "shouyou.practice.root.v1";
 
 export type RootPracticeTopInfo = {
@@ -462,7 +462,7 @@ export default function RootPracticeTrainer({ onTopInfoChange }: RootPracticeTra
         <div className="flex flex-wrap items-center justify-between gap-3">
           <h2 className="text-xl font-semibold text-slate-900">字根练习</h2>
           <div className="flex flex-wrap items-center gap-2" role="group" aria-label="练习版本">
-            {schemeList.map((scheme) => {
+            {practiceSchemeOrder.map((scheme) => {
               const option = rootPracticeSchemes[scheme];
               const isActive = activeScheme === scheme;
               return (

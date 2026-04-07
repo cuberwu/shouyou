@@ -45,8 +45,8 @@ export default function PracticePage() {
         ];
 
   return (
-    <main className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-6 pb-20 pt-8">
-      <section className="rounded-3xl border border-white/70 bg-white/90 p-4 shadow-[var(--shadow-sm)]">
+    <main className="page-shell gap-6 pt-8">
+      <section className="site-panel p-4">
         <div className="flex flex-col gap-4">
           <div className="flex flex-wrap items-center gap-3">
             <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-emerald-700">

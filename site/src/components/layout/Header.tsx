@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import logo from "@/app/icon.jpg";
 
 const navLinks = [
   { label: "教程", href: "/tutorial" },
@@ -14,13 +15,11 @@ const navLinks = [
 
 export default function Header() {
   const pathname = usePathname();
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-  const [mobileMenuPath, setMobileMenuPath] = useState<string | null>(null);
-  const isMobileMenuOpen = mobileMenuPath === pathname;
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement | null>(null);
 
   const closeMobileMenu = () => {
-    setMobileMenuPath(null);
+    setIsMobileMenuOpen(false);
   };
 
   useEffect(() => {
@@ -53,7 +52,7 @@ export default function Header() {
       : [{ label: "回到首页", href: "/" }, ...navLinks];
 
   const toggleMobileMenu = () => {
-    setMobileMenuPath((prev) => (prev === pathname ? null : pathname));
+    setIsMobileMenuOpen((value) => !value);
   };
 
   return (
@@ -69,7 +68,7 @@ export default function Header() {
           aria-label="首右辅助码首页"
         >
           <Image
-            src={`${basePath}/logo.jpg`}
+            src={logo}
             alt="首右辅助码 Logo"
             width={40}
             height={40}

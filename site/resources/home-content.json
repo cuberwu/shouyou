@@ -1,0 +1,138 @@
+{
+  "hero": {
+    "eyebrow": "普及版 + Plus 版双路线",
+    "title": "首右辅助码",
+    "subtitle": "高效中文输入方案",
+    "description": "低重码、舒适手感与系统教程集成，支持在线查形与多平台配置，帮助你快速建立高效输入习惯。",
+    "primaryAction": {
+      "label": "开始学习",
+      "href": "/tutorial"
+    },
+    "secondaryAction": {
+      "label": "立即下载",
+      "href": "/download"
+    },
+    "meta": [
+      "适配 Rime / 小胖 / 多多",
+      "支持 Windows / macOS / Linux / Android"
+    ]
+  },
+  "versions": {
+    "title": "普及版 / Plus 版对比",
+    "description": "根据学习阶段选择适合你的版本，随时升级。",
+    "items": [
+      {
+        "name": "普及版",
+        "tag": "入门推荐",
+        "accent": "var(--color-primary)",
+        "badge": "基础",
+        "points": [
+          "基础字根表",
+          "常用词库 5 万+",
+          "标准简码系统",
+          "主流平台支持"
+        ]
+      },
+      {
+        "name": "Plus 版",
+        "tag": "进阶推荐",
+        "accent": "var(--color-plus)",
+        "badge": "推荐",
+        "points": [
+          "完整字根表",
+          "扩展词库 10 万+",
+          "高级简码系统",
+          "生僻字/繁体支持",
+          "自定义优化"
+        ]
+      }
+    ]
+  },
+  "comparison": {
+    "title": "横向对比：简单易学但效率不输",
+    "description": "结合拼音的高效组词能力与辅助码的精准去重，保持输入节奏不被打断。",
+    "rows": [
+      {
+        "dimension": "学习门槛",
+        "pinyin": "会拼音即可",
+        "other": "字根多、规则复杂",
+        "shouyou": "少量核心规则，轻量上手"
+      },
+      {
+        "dimension": "选字负担",
+        "pinyin": "候选多需翻页",
+        "other": "候选少但记忆负担大",
+        "shouyou": "候选少，按需补码即可锁定"
+      },
+      {
+        "dimension": "打字节奏",
+        "pinyin": "易被找字打断",
+        "other": "较稳定但学习成本高",
+        "shouyou": "节奏稳定，思路不断线"
+      },
+      {
+        "dimension": "综合效率",
+        "pinyin": "中",
+        "other": "高",
+        "shouyou": "高（不输同类方案）"
+      }
+    ],
+    "highlight": {
+      "title": "简单 × 高效",
+      "description": "首右辅助码保持拼音习惯，只在需要时补一键即可精准选字，减少翻页与视线移动。",
+      "points": [
+        "拼音组词保持输入速度",
+        "辅助码去重提升确定性",
+        "学习成本可控，循序渐进"
+      ]
+    }
+  },
+  "features": {
+    "title": "核心特点",
+    "description": "一套体系覆盖学习、练习与实战，面向高效率输入场景。",
+    "items": [
+      {
+        "title": "低重码率",
+        "description": "常用字覆盖更好，重码更少，输入更顺畅。",
+        "highlight": "前 3000 字重码大幅下降"
+      },
+      {
+        "title": "舒适手感",
+        "description": "左右手负担均衡，减少同指连击和跨排。",
+        "highlight": "手感曲线更稳定"
+      },
+      {
+        "title": "易学易记",
+        "description": "字根规律性强，配合系统教程快速上手。",
+        "highlight": "7-14 天入门"
+      },
+      {
+        "title": "大字集支持",
+        "description": "覆盖生僻字与扩展字集，兼顾专业需求。",
+        "highlight": "支持 GBK/扩展字"
+      }
+    ]
+  },
+  "learningPath": {
+    "title": "学习路线",
+    "description": "循序渐进，配合查形工具提升记忆效率。",
+    "steps": [
+      {
+        "title": "双拼入门",
+        "description": "掌握声母与韵母键位"
+      },
+      {
+        "title": "字根记忆",
+        "description": "理解字根分布与编码逻辑"
+      },
+      {
+        "title": "拆分练习",
+        "description": "常用字拆分演练"
+      },
+      {
+        "title": "实战应用",
+        "description": "搭配查形与跟打训练"
+      }
+    ]
+  }
+}

@@ -14,14 +14,16 @@ import {
   loadPujiChaifenDictionary,
   type ChaifenEntry,
 } from "@/lib/chaifenData";
-
-type SchemeKey = "basic" | "plus";
+import {
+  practiceSchemeOrder,
+  rootPracticeSchemes,
+  type PracticeSchemeKey,
+} from "@/lib/practice/rootPractice";
 
 type SchemeOption = {
-  key: SchemeKey;
+  key: PracticeSchemeKey;
   label: string;
   accent: string;
-  status: "ready";
 };
 
 type LookupGroup = {
@@ -29,20 +31,11 @@ type LookupGroup = {
   entries: ChaifenEntry[];
 };
 
-const schemeOptions: SchemeOption[] = [
-  {
-    key: "basic",
-    label: "普及版",
-    accent: "var(--color-primary)",
-    status: "ready",
-  },
-  {
-    key: "plus",
-    label: "Plus 版",
-    accent: "var(--color-plus)",
-    status: "ready",
-  },
-];
+const schemeOptions: SchemeOption[] = practiceSchemeOrder.map((schemeKey) => ({
+  key: schemeKey,
+  label: rootPracticeSchemes[schemeKey].label,
+  accent: rootPracticeSchemes[schemeKey].accent,
+}));
 
 type LookupResultCardProps = {
   group: LookupGroup;
@@ -97,7 +90,7 @@ const LookupResultCard = ({ group }: LookupResultCardProps) => {
 };
 
 export default function LookupPage() {
-  const [activeScheme, setActiveScheme] = useState<SchemeKey>("basic");
+  const [activeScheme, setActiveScheme] = useState<PracticeSchemeKey>("basic");
   const [query, setQuery] = useState("");
   const [submittedQuery, setSubmittedQuery] = useState("");
   const [dictionary, setDictionary] = useState<
@@ -114,17 +107,16 @@ export default function LookupPage() {
 
   useEffect(() => {
     let isActive = true;
-    const controller = new AbortController();
 
-    const loadDictionary = async () => {
+    async function loadDictionary() {
       setLoadState("loading");
       setLoadError(null);
 
       try {
         const parsedDictionary =
           activeScheme === "basic"
-            ? await loadPujiChaifenDictionary(controller.signal)
-            : await loadPlusChaifenDictionary(controller.signal);
+            ? await loadPujiChaifenDictionary()
+            : await loadPlusChaifenDictionary();
         if (!isActive) {
           return;
         }
@@ -141,13 +133,12 @@ export default function LookupPage() {
           error instanceof Error ? error.message : "码表读取失败"
         );
       }
-    };
+    }
 
     loadDictionary();
 
     return () => {
       isActive = false;
-      controller.abort();
     };
   }, [activeScheme]);
 
@@ -170,9 +161,9 @@ export default function LookupPage() {
   };
 
   return (
-    <main className="mx-auto w-full max-w-6xl px-6 pb-20 pt-12">
+    <main className="page-shell">
       <section className="grid gap-8">
-        <div className="rounded-3xl border border-white/60 bg-white/80 p-8 shadow-[var(--shadow-md)]">
+        <div className="site-panel p-8">
           <div className="space-y-3">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-600">
               查形工具
